@@ -1,0 +1,103 @@
+
+import axios from 'axios'
+import { useState } from 'react'
+import { useLocation } from 'react-router-dom';
+
+import ChatInterface from './ChatInterface'
+import CountrySelectionModal from './CountrySelectionModal'
+
+const initialMessage = {
+    id: 1,
+    message: 'Hello! How can I assist you with questions today?',
+    sender: 'ai',
+    sources: null
+}
+function ChatContainer() {
+    const location = useLocation();
+    const { selectedCountry: initialCountry } = location.state || {};
+
+    const [selectedCountry, setSelectedCountry] = useState(initialCountry);
+    const [messages, setMessages] = useState(() => [
+        initialMessage
+    ])
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const [sessionId] = useState(() => `session_${Date.now()}`)
+
+    const handleSendMessage = async (messageText) => {
+
+        const payload = {
+            message: messageText,
+            session_id: sessionId
+        }
+
+        setMessages((prev) => [...prev, {...payload, sender: 'user'}])
+        try {
+            const response = await axios.post(``, {
+                ...payload,
+                country: selectedCountry
+            }
+            )
+
+            const { answer } = response.data
+            let aiMessage = {
+                id: `ai_${Date.now()}`,
+                message: answer,
+                sender: 'ai',
+            }
+
+            setMessages((prev) => [...prev, aiMessage])
+        } catch (error) {
+            let aiMessage = {
+                id: `ai_${Date.now()}`,
+                message: 'Sorry, I am unable to provide an answer to that question.',
+                sender: 'ai',
+            }
+            setMessages((prev) => [...prev, aiMessage])
+            throw error
+        }
+    }
+
+    const handleNewConversation = () => {
+        setMessages([initialMessage])
+    }
+
+    const handleChangeCountry = () => {
+        setIsModalOpen(true);
+    }
+
+    const handleCountrySelect = (country) => {
+        setSelectedCountry(country);
+    }
+
+    const handleCloseModal = () => {
+        setIsModalOpen(false);
+    }
+
+    return (
+        <div className="flex-1 flex flex-row overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 relative">
+            {/* Background gradient overlay */}
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10"></div>
+
+            <div className="flex-1 flex flex-col relative z-10">
+                <ChatInterface
+                    messages={messages}
+                    onSendMessage={handleSendMessage}
+                    onNewConversation={handleNewConversation}
+                    onChangeCountry={handleChangeCountry}
+                    selectedCountry={selectedCountry}
+                />
+
+                {/* Country Selection Modal */}
+                <CountrySelectionModal
+                    isOpen={isModalOpen}
+                    onClose={handleCloseModal}
+                    onCountrySelect={handleCountrySelect}
+                    currentCountry={selectedCountry}
+                />
+            </div>
+        </div>
+    )
+}
+
+export default ChatContainer

@@ -1,0 +1,115 @@
+/* src/index.css */
+
+/* 1. Import Tailwind CSS v4 layers */
+/*    These are essential for Tailwind v4 to work. */
+@import 'tailwindcss/preflight'; /* Base styles/resets */
+@import 'tailwindcss/utilities'; /* Core utility classes */
+/*
+   For 'components' in v4, it's more about composing utilities or using plugins.
+   If you have specific needs for a 'components' layer from a plugin,
+   that plugin's documentation would specify how to import it.
+   For now, preflight and utilities are the main ones.
+*/
+/* 2. Import Google Fonts (if not self-hosting or using a different method) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* 3. Global Base Styles using Tailwind's @layer directive */
+/*    This is where you can set global defaults that Tailwind's Preflight might not cover
+    or that you want to specifically define for your application. */
+@layer base {
+    html {
+        /*
+      Poppins font family for modern, professional typography
+      Perfect for legal applications with excellent readability
+    */
+        font-family: 'Poppins', sans-serif;
+        -webkit-font-smoothing: antialiased; /* For smoother font rendering */
+        -moz-osx-font-smoothing: grayscale; /* For smoother font rendering in Firefox */
+        font-feature-settings:
+            'kern' 1,
+            'liga' 1; /* Better kerning and ligatures */
+    }
+
+    body {
+        /*
+      Default background and text color for the entire application.
+      Your App.jsx root div also sets this with: className="bg-[#f8fafc] text-gray-800"
+      Setting it here provides a fallback or can be considered the true global default.
+      If set in App.jsx, that will take precedence for elements within that div.
+    */
+        /* background-color: #f8fafc; */ /* Corresponds to bg-slate-50 */
+        /* color: #1e293b; */ /* Corresponds to text-slate-700 (a common dark gray for text) */
+
+        /* Enhanced typography for better readability */
+        font-weight: 400;
+        line-height: 1.6;
+        letter-spacing: 0.01em;
+
+        /* Scrollbar hiding (as per original request) */
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+
+    body::-webkit-scrollbar {
+        /* WebKit browsers (Chrome, Safari, new Edge) */
+        display: none;
+    }
+    html::-webkit-scrollbar {
+        /* Sometimes needed on html too for full effect */
+        display: none;
+    }
+}
+
+/* 4. Custom Component Styles (Generally try to avoid these with utility-first Tailwind) */
+/*
+   The .tab-active class from your original HTML:
+     .tab-active { color: #2563eb; background: #e0e7ff; }
+   Is handled in your Header.jsx with conditional Tailwind classes:
+     className={`... ${activeTab === 'chatbot' ? 'text-blue-600 bg-blue-100' : 'hover:bg-gray-100'}`}
+   This is the preferred Tailwind approach, so you don't need the .tab-active class here.
+*/
+
+/*
+   5. Animations:
+      Your animations (fadeIn, slideInLeft, slideInRight) are defined in your
+      App.jsx using Tailwind's animation utility classes like `animate-fadeIn`,
+      `animate-slideInLeft`, `animate-slideInRight`.
+      This means the @keyframes and the mapping of these utilities to those keyframes
+      MUST be in your `tailwind.config.js` under `theme.extend.animation` and `theme.extend.keyframes`.
+      You DO NOT need to define the @keyframes or the .fade-in {} style classes here again.
+*/
+
+/* Typography Enhancements */
+@layer utilities {
+    .text-display {
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 1.2;
+    }
+
+    .text-heading {
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        line-height: 1.3;
+    }
+
+    .text-body {
+        font-weight: 400;
+        line-height: 1.6;
+        letter-spacing: 0.01em;
+    }
+
+    .text-caption {
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.4;
+        letter-spacing: 0.02em;
+    }
+
+    .text-legal {
+        font-weight: 400;
+        line-height: 1.7;
+        letter-spacing: 0.005em;
+    }
+}
+
+/* --- End of src/index.css --- */
