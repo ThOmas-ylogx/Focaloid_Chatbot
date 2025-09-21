@@ -1,0 +1,145 @@
+Order,Question,Country,Answer,Comment
+1,Are there any Tariffs that you must apply for a specific Line of Business or cover?,Nigeria,Yes,"For Fire policy, we have the PRAN rating, For Motor we have a compulsory rate of 5% and also Travel"
+2,Does any compulsory/optional Pool or State Reinsurance Scheme apply in your COUNTRY?,Nigeria,No,
+3,"If yes, please specify for which LoB or Cover",Nigeria,,
+4,Do you need to apply a Minimum Retention when ceding the premiums back to Reinsurers?,Nigeria,Yes,Leadway retention will be 50%
+5,"If yes, please specify the percentage amount",Nigeria,0.5,
+6,Do you need to involve a mandatory intermediary REINSURER (e.g. State Reinsurer) before ceding the policy back to Generali?,Nigeria,No,
+7,"If yes, please specify the Reinsurer's Company name",Nigeria,,
+8,"If yes, please specify the Reinsurer's overrider percentage",Nigeria,0,
+9,"If yes, please specify the Reinsurer's retention percentage",Nigeria,0,
+10,Do you need to apply a Reinsurance Tax (RI Tax) when ceding the premiums back to Generali?,Nigeria,No,There is a 1% mandatory levy
+11,"If yes, please specify the percentage or amount",Nigeria,0,
+12,"If yes, please specify the basis for RI Tax calculation (gross or net)",Nigeria,Gross,
+13,Does Cash Before Cover apply in your COUNTRY?,Nigeria,Yes,Premium Payment Warranty
+14,What are your standard local policy premium terms of Payment (assuming the terms apply from the premium invoice)? Please specify the number of days.,Nigeria,,Nigeria is a strict cash before cover territory
+15,What are your standard Terms of Policy Cancellation in case the premium is unpaid according to your Terms of Payment? Please specify the number of days.,Nigeria,30,Please note that policy will be suspended until the first premium is paid and it will remain in force 30 days from inception after which it will be suspended
+16,What are your standard Terms of Policy Cancellation? Please specify the number of days.,Nigeria,30,30 Days from inception
+17,Can you issue the Policy retroactively (i.e. backdating of the effective date of coverage permitted)? ,Nigeria,No,
+18,Can you issue policy certificates (proof of insurance) pending the issuance of the policy?,Nigeria,Yes,
+19,Can you issue the policy BEFORE signing the Slip/Reinsurance Covernote?,Nigeria,Yes,
+20,Is a Broker mandatory in your country to issue the policy?,Nigeria,No,
+21,In what currency (on the top of the local currency) are you able to issue the policy?,Nigeria,USD/EUR/GBP,
+22,Can you agree on Centralized Premium Collection (CPC)?,Nigeria,Yes,
+23,"If yes, can you accept to receive directly only the deductions (e.g. overrider fees, brokerage, …) and local taxes (i.e. premium will not be transferred to you)?",Nigeria,No,
+24,"On what basis are the Reinsurance Bordereauxs ceded back to Generali (i.e. monthly, quarterly)?",Nigeria,Quarterly,
+25,What are your standard Terms (number of days) to send the Premiums and Claims Bordereaux after the closing of the relevant period (ex. 30 days after the closing of the quarter)? Please specify the number of days.,Nigeria,60,
+26,Please provide your Bank Name,Nigeria,AS PER THE ATTACHED ,Please indicate us the bank address on column D
+27,Please provide your Bank Account Number,Nigeria,,
+28,Please provide your Bank Account currency,Nigeria,,
+29,What is your Policy Jurisdiction for Casualty and Financial Lines policies?,Nigeria,NIGERIA,
+30,"If you exclude Pandemic/Infectious Disease/Communicable Disease (e.g. COVID-19), please provide the wording of the exclusion.",Nigeria,,We kindly ask you to provide us the answer on column C
+31,"(Property) When you are covering Public Authority (BI), do you exclude Pandemic/Infectious Disease/Communicable Disease (e.g. COVID-19) as loss trigger?",Nigeria,,
+32,"(Property) If yes, please provide the wording of the Public Authority clause",Nigeria,"The insurance on Buildings by this policy extends to include such additional cost of reinstatement of the destroyed or damaged property thereby insured as may be incurred solely by reason of the necessity to comply with Buildings or other Regulations under or framed in pursuance of any Government Ordinances or Bye-Laws of any Municipal or Local Authority provided that: -
+ 
+1.  The amount recoverable under this extension shall not include:
+ 
+the cost incurred in complying with any of the aforesaid regulations or Bye-Laws.
+ 
+in respect of destruction or damage occurring prior to the granting of this extension.
+in respect of destruction or damage not insured by the policy.
+under which notice has been served upon the insured prior to the happening of the destruction or damage, in respect of undamaged property or undamaged portions of property other than foundations (unless foundations are specially excluded from the insurance of this policy) of that portion of the property destroyed or damaged.
+in respect of the undamaged property or undamaged portions of property;
+ 
+The additional cost that would have been required to make good the property damaged or destroyed to a condition equal to its condition when new had the necessity to comply with any of the aforesaid Regulations or Bye-Laws not arisen;
+ 
+The amount of any rate tax duty development or other charge or assessment arising out of capital appreciation, which may be, payable in respect of the property or by the owner thereof by reason of compliance with any of the aforesaid Regulations or Bye-Laws.
+ 
+2.         The work of reinstatement must be commenced and carried out with reasonable despatch and in any case must be completed within twenty four months after the destruction or damage or within such further time as the insurers may (during the said twenty-four months) in writing allow and may be carried out wholly or partially upon another site (if the aforesaid Regulations or Bye-Laws so necessitate) subject to the liability of the insurers under this Extension not being thereby increased.
+ 
+3.         If the liability of the insurers under the policy apart from this Extension shall be reduced by the application of any of the terms and conditions of the policy then the liability of the insurers under this Extension shall be reduced in like proportion.
+ 
+4.         The total amount recoverable in respect of Buildings shall not exceed the sum insured thereon (included in the total sum insured by the Policy).
+ 
+5.         All the conditions of the policy except in so far as they may be hereby expressly varied shall apply as if they had been incorporated herein.",
+33,Do you include a Sanctions Clause in your policy?,Nigeria,Yes,
+34,"If yes, please provide the Sanctions Clause wording",Nigeria,"No insurer shall be deemed to provide cover and no insurer shall be liable to pay any
+claim or provide any benefit hereunder to the extent that the provision of such cover,
+payment of such claim or provision of such benefit would expose the insurer or its' parent,
+to any sanction, prohibition or restriction implemented pursuant to resolutions of the
+United Nations or the trade and economic Sanctions, laws or regulations of the European
+Union, United Kingdom or United States of America.",We noticed that the Public autority clause wording is the same as the wording indicated for  Sanctions Clause. Could you please check and send us the correct wording for both clauses?
+35,Do you have a Sanctions Screening Process / Tool to perform the required check and screening in compliance with International and Territorial Sanctions?,Nigeria,Yes,
+36,(Marine Cargo) Is there any compulsory local insurance based on the incoterms?,Nigeria,Yes,
+37,(Marine Cargo) Is there any compulsory local insurance based on import/export/domestic transit?,Nigeria,Yes,
+38,Do you need to get confirmation of the policy draft from the broker before policy issuance according to your local regulation?,Nigeria,No,
+39,Can you work with a Third Party Administrator (TPA)?,Nigeria,No,PLEASE CLARIFY
+40,Do you have a list of approved TPA you work with?,Nigeria,No,
+41,Can you delegate Claims Authority to a TPA or to Generali as Reinsurer?,Nigeria,Yes,
+42,Is an English language non-binding version of the policy available upon request?,Nigeria,Yes,The policy is issued originally in English
+43,"Do you need any specific document to issue the requested local policy (e.g. KYC, etc.)?",Nigeria,Yes,"Proposal form, Company CAC"
+44,(Property) Can you issue policies on an All Risks basis?,Nigeria,Yes,
+45,"(Property) If you exclude Cyber risk, please provide the wording of the exclusion.",Nigeria,Not available,
+1,Are there any Tariffs that you must apply for a specific Line of Business or cover?,Cameroon,Yes,
+2,Does any compulsory/optional Pool or State Reinsurance Scheme apply in your COUNTRY?,Cameroon,No,
+3,"If yes, please specify for which LoB or Cover",Cameroon,,
+4,Do you need to apply a Minimum Retention when ceding the premiums back to Reinsurers?,Cameroon,Yes,Leadway retention will be 40%
+5,"If yes, please specify the percentage amount",Cameroon,0.5,
+6,Do you need to involve a mandatory intermediary REINSURER (e.g. State Reinsurer) before ceding the policy back to Generali?,Cameroon,No,
+7,"If yes, please specify the Reinsurer's Company name",Cameroon,,
+8,"If yes, please specify the Reinsurer's overrider percentage",Cameroon,0,
+9,"If yes, please specify the Reinsurer's retention percentage",Cameroon,0,
+10,Do you need to apply a Reinsurance Tax (RI Tax) when ceding the premiums back to Generali?,Cameroon,No,There is a 2% mandatory levy
+11,"If yes, please specify the percentage or amount",Cameroon,0,
+12,"If yes, please specify the basis for RI Tax calculation (gross or net)",Cameroon,Gross,
+13,Does Cash Before Cover apply in your COUNTRY?,Cameroon,Yes,Premium Payment Warranty
+14,What are your standard local policy premium terms of Payment (assuming the terms apply from the premium invoice)? Please specify the number of days.,Cameroon,,Cameeroon is a strict cash before cover territory
+15,What are your standard Terms of Policy Cancellation in case the premium is unpaid according to your Terms of Payment? Please specify the number of days.,Cameroon,30,Please note that policy will be suspended until the first premium is paid and it will remain in force 28 days from inception after which it will be suspended
+16,What are your standard Terms of Policy Cancellation? Please specify the number of days.,Cameroon,30,28 Days from inception
+17,Can you issue the Policy retroactively (i.e. backdating of the effective date of coverage permitted)? ,Cameroon,No,
+18,Can you issue policy certificates (proof of insurance) pending the issuance of the policy?,Cameroon,Yes,
+19,Can you issue the policy BEFORE signing the Slip/Reinsurance Covernote?,Cameroon,Yes,
+20,Is a Broker mandatory in your country to issue the policy?,Cameroon,No,
+21,In what currency (on the top of the local currency) are you able to issue the policy?,Cameroon,USD/EUR/GBP,
+22,Can you agree on Centralized Premium Collection (CPC)?,Cameroon,Yes,
+23,"If yes, can you accept to receive directly only the deductions (e.g. overrider fees, brokerage, …) and local taxes (i.e. premium will not be transferred to you)?",Cameroon,No,
+24,"On what basis are the Reinsurance Bordereauxs ceded back to Generali (i.e. monthly, quarterly)?",Cameroon,Quarterly,
+25,What are your standard Terms (number of days) to send the Premiums and Claims Bordereaux after the closing of the relevant period (ex. 30 days after the closing of the quarter)? Please specify the number of days.,Cameroon,60,
+26,Please provide your Bank Name,Cameroon,AS PER THE ATTACHED ,Please indicate us the bank address on column D
+27,Please provide your Bank Account Number,Cameroon,,
+28,Please provide your Bank Account currency,Cameroon,,
+29,What is your Policy Jurisdiction for Casualty and Financial Lines policies?,Cameroon,NIGERIA,
+30,"If you exclude Pandemic/Infectious Disease/Communicable Disease (e.g. COVID-19), please provide the wording of the exclusion.",Cameroon,,We kindly ask you to provide us the answer on column C
+31,"(Property) When you are covering Public Authority (BI), do you exclude Pandemic/Infectious Disease/Communicable Disease (e.g. COVID-19) as loss trigger?",Cameroon,,
+32,"(Property) If yes, please provide the wording of the Public Authority clause",Cameroon,"Reinstatement of Buildings – Compliance with Regulations (Cameroon)
+
+The insurance on Buildings under this policy extends to include such additional cost of reinstatement of the destroyed or damaged property hereby insured as may be incurred solely by reason of the necessity to comply with Building Regulations, Government Ordinances, or Bye-Laws of any Municipal or Local Authority within the Republic of Cameroon, provided that:
+
+The amount recoverable under this Extension shall not include:
+
+Any cost incurred in complying with the aforesaid Regulations, Ordinances, or Bye-Laws:
+
+in respect of destruction or damage occurring prior to the granting of this Extension;
+
+in respect of destruction or damage not insured by this policy;
+
+where notice has been served upon the Insured prior to the happening of the destruction or damage, in respect of undamaged property or undamaged portions of property, other than foundations (unless foundations are expressly excluded from this policy).
+
+The additional cost that would have been required to reinstate the damaged or destroyed property to a condition equal to its condition when new, had compliance with the aforesaid Regulations, Ordinances, or Bye-Laws not been necessary.
+
+Any rate, tax, duty, development levy, or other charge or assessment arising out of capital appreciation, payable in respect of the property or by the owner thereof, by reason of compliance with the aforesaid Regulations, Ordinances, or Bye-Laws.
+
+Reinstatement Work:
+The work of reinstatement must be commenced and carried out with reasonable despatch and in any case must be completed within twenty-four (24) months after the occurrence of the destruction or damage, or within such further time as the Insurers may (during the said twenty-four months) in writing allow. Such reinstatement may be carried out wholly or partially upon another site in Cameroon (if so required by the aforesaid Regulations, Ordinances, or Bye-Laws), subject always to the liability of the Insurers under this Extension not being thereby increased.
+
+Proportional Reduction:
+If the liability of the Insurers under the policy (apart from this Extension) shall be reduced by the application of any terms and conditions of the policy, then the liability of the Insurers under this Extension shall likewise be reduced in the same proportion.
+
+Maximum Liability:
+The total amount recoverable in respect of Buildings shall not exceed the sum insured thereon (included within the total sum insured by this policy).
+
+Policy Conditions:
+All the terms, conditions, and provisions of the policy, except insofar as they are expressly varied herein, shall apply as if they had been incorporated into this Extension.",
+33,Do you include a Sanctions Clause in your policy?,Cameroon,Yes,
+34,"If yes, please provide the Sanctions Clause wording",Cameroon,"No insurer shall be deemed to provide cover and no insurer shall be liable to pay any claim or provide any benefit hereunder to the extent that the provision of such cover, payment of such claim or provision of such benefit would expose the insurer or its parent to any sanction, prohibition or restriction implemented pursuant to resolutions of the United Nations or the trade and economic sanctions, laws, or regulations of the Republic of Cameroon, the African Union, the European Union, the United Kingdom, or the United States of America.",We noticed that the Public autority clause wording is the same as the wording indicated for  Sanctions Clause. Could you please check and send us the correct wording for both clauses?
+35,Do you have a Sanctions Screening Process / Tool to perform the required check and screening in compliance with International and Territorial Sanctions?,Cameroon,Yes,
+36,(Marine Cargo) Is there any compulsory local insurance based on the incoterms?,Cameroon,Yes,
+37,(Marine Cargo) Is there any compulsory local insurance based on import/export/domestic transit?,Cameroon,Yes,
+38,Do you need to get confirmation of the policy draft from the broker before policy issuance according to your local regulation?,Cameroon,No,
+39,Can you work with a Third Party Administrator (TPA)?,Cameroon,No,PLEASE CLARIFY
+40,Do you have a list of approved TPA you work with?,Cameroon,No,
+41,Can you delegate Claims Authority to a TPA or to Generali as Reinsurer?,Cameroon,Yes,
+42,Is an English language non-binding version of the policy available upon request?,Cameroon,Yes,The policy is issued originally in English
+43,"Do you need any specific document to issue the requested local policy (e.g. KYC, etc.)?",Cameroon,Yes,"Proposal form, Company CAC"
+44,(Property) Can you issue policies on an All Risks basis?,Cameroon,Yes,
+45,"(Property) If you exclude Cyber risk, please provide the wording of the exclusion.",Cameroon,Not available,

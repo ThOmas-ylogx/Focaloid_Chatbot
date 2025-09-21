@@ -1,11 +1,4 @@
 #custome list
-vectorstore/
-temp_ingestion_uploads/
-temp_uploads_summarizer/
-LegalAI Knowledgebase/
-chat_histories/
-# Files
-filtered_chroma_dump.txt
 
 # Byte-compiled / optimized / DLL files
 node_modules

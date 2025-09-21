@@ -1,7 +1,5 @@
 // --- CONFIGURATION ---
-export const API_URL_SUMMARIZE = import.meta.env.VITE_API_URL
 export const CHAT_API_URL = import.meta.env.VITE_CHAT_API_URL
-export const METADATA_API_URL = import.meta.env.VITE_METADATA_API_URL
 
 // --- API & DYNAMIC TRANSLATION UTILITIES ---
 export const callBatchTranslationAPI = async (texts, targetLanguage) => {
