@@ -1,7 +1,7 @@
 # Focaloid Insurance QA Chatbot 
 
 ## Frontend
-
+React + Vite
 
 ## Backend
 
@@ -19,7 +19,7 @@ This backend provides a FastAPI-based API for a country-aware insurance chatbot.
 
 ```bash
 git clone <repo-url>
-cd Focaloid_Chatbot/backend
+cd FocaloidChatbot/backend
 ```
 
 ### 2. Install Dependencies
@@ -34,4 +34,17 @@ pip install -r requirements.txt
 
 ```bash
 uvicorn main:app --reload
+```
+## Setup frontend
+
+```bash
+cd FocaloidChatbot/frontend
+```
+Execute the following cmds
+```bash
+npm install 
+```
+## Run the Application
+```bash
+npm run dev   #execute these command
 ```

@@ -25,11 +25,11 @@ function LandingPage() {
     };
 
     return (
-        <div className="flex-1 flex flex-col items-center text-center relative overflow-hidden">
+        <div className="flex-1 flex flex-col items-center text-center relative overflow-hidden bg-[#031D3C]">
             <div className="relative z-10 max-w-md w-full px-6 mt-20">
                 <div className="bg-white rounded-xl border border-gray-400 p-8">
                     <h1 className="text-3xl font-bold text-gray-900 mb-2">
-                        Welcome to Focaloid
+                        Welcome to Insurance Q&A bot
                     </h1>
                     <p className="text-gray-600 mb-8">
                         Please select a country to get started

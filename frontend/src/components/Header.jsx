@@ -43,10 +43,8 @@ function Header() {
 
 
             <div className="mx-auto flex items-center justify-between relative z-10">
-                <button onClick={() => navigate('/dashboard')}>
-                    <h1 className="text-3xl text-display">
-                        Focaloid POC
-                    </h1>
+                <button className='shadow-2xl p-2 bg-gray-500 rounded-lg' onClick={() => navigate('/dashboard')}>
+                    <img src="https://www.focaloid.com/wp-content/uploads/2025/04/Focaloid_logo_inverted-1.svg" alt="logo" className="max-w-35" />
                 </button>
                 <div className="flex items-center flex-wrap gap-4">
                     <button
@@ -56,11 +54,6 @@ function Header() {
                     >
                         <FontAwesomeIcon icon={faHome} className="text-lg" />
                     </button>
-
-                    {/* <button className="!cursor-not-allowed text-white w-12 h-10 rounded-lg bg-gradient-glass hover:bg-gradient-primary transition-all duration-300 flex items-center justify-center backdrop-blur-sm">
-                        <FontAwesomeIcon icon={faCog} className="text-lg" />
-                    </button> */}
-
 
                     <div className="relative">
                         <button
