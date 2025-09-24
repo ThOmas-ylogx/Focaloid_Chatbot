@@ -150,6 +150,9 @@ venv.bak/
 # mkdocs documentation
 /site
 
+# Vectorstore
+/vectorstore
+
 # mypy
 .mypy_cache/
 .dmypy.json

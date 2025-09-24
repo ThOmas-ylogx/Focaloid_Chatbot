@@ -7,6 +7,8 @@ import { faUser, faRobot, faSpinner, faGlobe, faChevronDown, faChevronUp, faFile
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState, useEffect, useRef } from 'react'
 
+import { formatTextForDisplay, detectStructuredContent } from '../utils/textFormatter'
+
 function ChatInterface({
     messages,
     onSendMessage,
@@ -25,22 +27,22 @@ function ChatInterface({
     useEffect(() => {
         if (chatHistoryRef.current) {
             const chatContainer = chatHistoryRef.current
-            
+
             // Check if the last message is from AI and if it's long
             const lastMessage = messages[messages.length - 1]
-            const isLongResponse = lastMessage && 
-                lastMessage.sender === 'ai' && 
-                lastMessage.message && 
+            const isLongResponse = lastMessage &&
+                lastMessage.sender === 'ai' &&
+                lastMessage.message &&
                 (lastMessage.message.length > 500 || lastMessage.message.split('\n').length > 10) // Long text or many lines
-            
+
             if (isLongResponse) {
                 // For long AI responses, scroll to show the beginning of the message
                 setTimeout(() => {
                     const aiMessages = chatContainer.querySelectorAll('[data-sender="ai"]')
                     const lastAiMessage = aiMessages[aiMessages.length - 1]
                     if (lastAiMessage) {
-                        lastAiMessage.scrollIntoView({ 
-                            behavior: 'smooth', 
+                        lastAiMessage.scrollIntoView({
+                            behavior: 'smooth',
                             block: 'start',
                             inline: 'nearest'
                         })
@@ -98,14 +100,18 @@ function ChatInterface({
                     {documents.map((doc, index) => {
                         const isExpanded = expandedDocuments[`${messageId}_${index}`]
                         const hasComment = doc.metadata?.Comment && doc.metadata.Comment !== 'nan'
-                        
+
                         return (
                             <div key={index} className="bg-gray-50 rounded-lg p-3 border border-gray-200">
                                 <div className="flex items-start justify-between">
-                                    <div className="flex-1">
-                                        <p className="text-sm text-gray-700 mb-2">{doc.content}</p>
-                                        <div className="flex items-center gap-4 text-xs text-gray-500">
-                                            <span>Answer: <strong>{doc.metadata?.Answer}</strong></span>
+                                    <div className="flex-1 text-left">
+                                        <p className="text-sm text-gray-700 mb-2 text-left">{doc.content}</p>
+                                        <div className="flex items-start gap-4 text-xs text-gray-500">
+                                            <div className="flex items-start gap-2 text-xs text-gray-500 max-w-[85%]">
+                                                <span>Answer:</span>
+                                                <span><strong>{' '}{doc.metadata?.Answer}</strong>
+                                                </span>
+                                            </div>
                                             <span>Country: <strong>{doc.metadata?.Country}</strong></span>
                                         </div>
                                     </div>
@@ -115,8 +121,8 @@ function ChatInterface({
                                             className="ml-2 p-1 text-blue-600 hover:text-blue-800 transition-colors bg-blue-100 rounded-full"
                                             title="Click to view comment"
                                         >
-                                            <FontAwesomeIcon 
-                                                icon={isExpanded ? faChevronUp : faChevronDown} 
+                                            <FontAwesomeIcon
+                                                icon={isExpanded ? faChevronUp : faChevronDown}
                                                 className="text-xs"
                                             />
                                         </button>
@@ -124,7 +130,7 @@ function ChatInterface({
                                 </div>
                                 {hasComment && isExpanded && (
                                     <div className="mt-2 p-2 bg-blue-50 border border-blue-200 rounded">
-                                        <div className="flex items-start gap-2">
+                                        <div className="flex items-start gap-2 text-left">
                                             <span className="text-xs font-medium text-blue-700">Comment:</span>
                                             <span className="text-xs text-blue-600">{doc.metadata.Comment}</span>
                                         </div>
@@ -188,12 +194,14 @@ function ChatInterface({
             >
                 {(messages || []).map((msg, index) => {
                     const isUser = msg.sender === 'user'
-                    const textToDisplay = msg.message
+                    const rawText = msg.message
+                    const formattedText = isUser ? rawText : formatTextForDisplay(rawText)
+                    const isStructured = !isUser && detectStructuredContent(rawText)
 
                     return (
                         <div
                             data-sender={msg.sender}
-                            key={msg.id + index}
+                            key={index}
                             className={`w-full py-4 ${isUser ? 'flex justify-end' : 'flex justify-start'}`}
                         >
                             <div
@@ -235,11 +243,18 @@ function ChatInterface({
                                             className={`text-md leading-relaxed ${isUser
                                                 ? 'text-right'
                                                 : 'text-left'
-                                                }`}
+                                                } ${isStructured ? 'structured-content' : ''}`}
                                         >
-                                            <p className="whitespace-pre-wrap">
-                                                {textToDisplay}
-                                            </p>
+                                            {isUser ? (
+                                                <p className="whitespace-pre-wrap">
+                                                    {rawText}
+                                                </p>
+                                            ) : (
+                                                <div 
+                                                    className="prose prose-sm max-w-none"
+                                                    dangerouslySetInnerHTML={{ __html: formattedText }}
+                                                />
+                                            )}
                                         </div>
 
                                         {/* Retrieved Documents for AI messages */}
@@ -253,7 +268,7 @@ function ChatInterface({
                                             <button
                                                 onClick={() =>
                                                     handleCopyMessage(
-                                                        textToDisplay,
+                                                        rawText,
                                                         msg.id
                                                     )
                                                 }

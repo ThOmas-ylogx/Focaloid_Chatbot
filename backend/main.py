@@ -1,6 +1,7 @@
 import os
 from dotenv import load_dotenv
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional, List
 from langchain_huggingface import HuggingFaceEmbeddings
@@ -25,6 +26,15 @@ logger = logging.getLogger("InsuranceQA_RAG")
 
 # ---------------- FastAPI App ----------------
 app = FastAPI(title="Insurance QA RAG Chatbot")
+
+# ---------------- CORS Configuration ----------------
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],  # Frontend URLs
+    allow_credentials=True,
+    allow_methods=["*"],  # Allow all HTTP methods
+    allow_headers=["*"],  # Allow all headers
+)
 
 # ---------------- Global Variables ----------------
 db: Chroma = None
@@ -74,12 +84,12 @@ def generate_answer(query: str, context_docs: List[Document]) -> str:
     logger.info(f"Generating answer for query: '{query}' with {len(context_docs)} context documents.")
     context_texts = [doc.page_content for doc in context_docs]
     logger.debug(f"Context texts:\n{context_texts}")
-
+    newline_separator = '\n\n'  # Use newline separator instead of \n\n 
     prompt = f"""
     Use the following documents as context to answer the question.
 
     Context:
-    {'\n\n'.join(context_texts)}
+    {newline_separator.join(context_texts)}
 
     Question: {query}
     Answer:
