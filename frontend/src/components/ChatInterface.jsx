@@ -6,8 +6,7 @@ import {
 import { faUser, faRobot, faSpinner, faGlobe, faChevronDown, faChevronUp, faFileText } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState, useEffect, useRef } from 'react'
-
-import { formatTextForDisplay, detectStructuredContent } from '../utils/textFormatter'
+import ReactMarkdown from 'react-markdown'
 
 function ChatInterface({
     messages,
@@ -85,61 +84,111 @@ function ChatInterface({
     const renderRetrievedDocuments = (documents, messageId) => {
         if (!documents || documents.length === 0) return null
 
-        return (
-            <div className="mt-3 border-t border-gray-200 pt-3">
-                <div className="flex items-center gap-2 mb-2">
-                    <FontAwesomeIcon icon={faFileText} className="text-gray-500 text-sm" />
-                    <span className="text-sm font-medium text-gray-600">Retrieved Documents</span>
-                    {documents.some(doc => doc.metadata?.Comment && doc.metadata.Comment !== 'nan') && (
-                        <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">
-                            Comments Available
-                        </span>
-                    )}
-                </div>
-                <div className="space-y-2">
-                    {documents.map((doc, index) => {
-                        const isExpanded = expandedDocuments[`${messageId}_${index}`]
-                        const hasComment = doc.metadata?.Comment && doc.metadata.Comment !== 'nan'
+        const isAccordionExpanded = expandedDocuments[`${messageId}_accordion`]
 
-                        return (
-                            <div key={index} className="bg-gray-50 rounded-lg p-3 border border-gray-200">
-                                <div className="flex items-start justify-between">
-                                    <div className="flex-1 text-left">
-                                        <p className="text-sm text-gray-700 mb-2 text-left">{doc.content}</p>
-                                        <div className="flex items-start gap-4 text-xs text-gray-500">
-                                            <div className="flex items-start gap-2 text-xs text-gray-500 max-w-[85%]">
-                                                <span>Answer:</span>
-                                                <span><strong>{' '}{doc.metadata?.Answer}</strong>
-                                                </span>
+        return (
+            <div className="mt-3 rounded-lg border border-gray-200">
+                {/* Accordion Header */}
+                <button
+                    onClick={() => toggleDocumentExpansion(messageId, 'accordion')}
+                    className="w-full flex items-center justify-between p-3 bg-gray-50 hover:bg-gray-100  transition-colors duration-200"
+                >
+                    <div className="flex items-center gap-2">
+                        <FontAwesomeIcon icon={faFileText} className="text-gray-500 text-sm" />
+                        <span className="text-sm font-medium text-gray-700">Retrieved Documents</span>
+                        <span className="text-xs bg-gray-200 text-gray-600 px-2 py-1 rounded-full">
+                            {documents.length} document{documents.length !== 1 ? 's' : ''}
+                        </span>
+                        {documents.some(doc => doc.metadata?.Comment && doc.metadata.Comment !== 'nan') && (
+                            <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">
+                                Comments Available
+                            </span>
+                        )}
+                    </div>
+                    <FontAwesomeIcon 
+                        icon={isAccordionExpanded ? faChevronUp : faChevronDown} 
+                        className="text-gray-500 text-sm transition-transform duration-200"
+                    />
+                </button>
+
+                {/* Accordion Content */}
+                {isAccordionExpanded && (
+                    <div className="mt-2 space-y-2 px-2">
+                        {documents.map((doc, index) => {
+                            const isDocExpanded = expandedDocuments[`${messageId}_doc_${index}`]
+                            const hasComment = doc.metadata?.Comment && doc.metadata.Comment !== 'nan'
+                            
+                            return (
+                                <div key={index} className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+                                    {/* Document Header */}
+                                    <button
+                                        onClick={() => toggleDocumentExpansion(messageId, `doc_${index}`)}
+                                        className="w-full flex items-start justify-between p-3 hover:bg-gray-50 transition-colors duration-200"
+                                    >
+                                        <div className="flex-1 text-left">
+                                            <p className="text-sm text-gray-700 mb-2 line-clamp-2">
+                                                {doc.content}
+                                            </p>
+                                            <div className="flex items-center gap-4 text-xs text-gray-500">
+                                                <span>Answer: <strong className="text-gray-700">{doc.metadata?.Answer}</strong></span>
+                                                <span>Country: <strong className="text-gray-700">{doc.metadata?.Country}</strong></span>
                                             </div>
-                                            <span>Country: <strong>{doc.metadata?.Country}</strong></span>
                                         </div>
-                                    </div>
-                                    {hasComment && (
-                                        <button
-                                            onClick={() => toggleDocumentExpansion(messageId, index)}
-                                            className="ml-2 p-1 text-blue-600 hover:text-blue-800 transition-colors bg-blue-100 rounded-full"
-                                            title="Click to view comment"
-                                        >
-                                            <FontAwesomeIcon
-                                                icon={isExpanded ? faChevronUp : faChevronDown}
-                                                className="text-xs"
+                                        <div className="ml-2 flex items-center gap-1">
+                                            {hasComment && (
+                                                <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full mr-2">
+                                                    Comment
+                                                </span>
+                                            )}
+                                            <FontAwesomeIcon 
+                                                icon={isDocExpanded ? faChevronUp : faChevronDown} 
+                                                className="text-gray-400 text-xs"
                                             />
-                                        </button>
+                                        </div>
+                                    </button>
+
+                                    {/* Document Content */}
+                                    {isDocExpanded && (
+                                        <div className="px-3 pb-3">
+                                            <div className="border-t border-gray-100 pt-3">
+                                                <p className="text-sm text-gray-700 mb-3 leading-relaxed">
+                                                    {doc.content}
+                                                </p>
+                                                
+                                                {/* Comment Section */}
+                                                {hasComment && (
+                                                    <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
+                                                        <div className="flex items-start gap-2">
+                                                            <FontAwesomeIcon icon={faFileText} className="text-blue-600 text-xs mt-0.5" />
+                                                            <div>
+                                                                <span className="text-xs font-medium text-blue-700 block mb-1">Additional Comment:</span>
+                                                                <span className="text-sm text-blue-800">{doc.metadata.Comment}</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                )}
+
+                                                {/* Metadata */}
+                                                <div className="mt-3 pt-3 border-t border-gray-100">
+                                                    <div className="grid grid-cols-2 gap-2 text-xs">
+                                                        <div>
+                                                            <span className="text-gray-500">Answer:</span>
+                                                            <span className="ml-1 font-medium text-gray-700">{doc.metadata?.Answer}</span>
+                                                        </div>
+                                                        <div>
+                                                            <span className="text-gray-500">Country:</span>
+                                                            <span className="ml-1 font-medium text-gray-700">{doc.metadata?.Country}</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     )}
                                 </div>
-                                {hasComment && isExpanded && (
-                                    <div className="mt-2 p-2 bg-blue-50 border border-blue-200 rounded">
-                                        <div className="flex items-start gap-2 text-left">
-                                            <span className="text-xs font-medium text-blue-700">Comment:</span>
-                                            <span className="text-xs text-blue-600">{doc.metadata.Comment}</span>
-                                        </div>
-                                    </div>
-                                )}
-                            </div>
-                        )
-                    })}
-                </div>
+                            )
+                        })}
+                    </div>
+                )}
             </div>
         )
     }
@@ -176,7 +225,7 @@ function ChatInterface({
         <div className="flex-1 flex flex-col overflow-hidden">
             {/* Country Display */}
             {selectedCountry && (
-                <div className="px-6 py-2">
+                <div className="sm:px-6 px-2 py-2">
                     <div className="flex items-center justify-center gap-2 text-sm text-gray-700">
                         <h2>Insurance Q&A bot</h2>
                         <FontAwesomeIcon icon={faGlobe} className="text-gray-600" />
@@ -189,14 +238,12 @@ function ChatInterface({
 
             {/* Chat Messages */}
             <div
-                className="flex-1 overflow-y-auto secondary-scrollbar px-6"
+                className="flex-1 overflow-y-auto secondary-scrollbar sm:px-16 w-full"
                 ref={chatHistoryRef}
             >
                 {(messages || []).map((msg, index) => {
                     const isUser = msg.sender === 'user'
                     const rawText = msg.message
-                    const formattedText = isUser ? rawText : formatTextForDisplay(rawText)
-                    const isStructured = !isUser && detectStructuredContent(rawText)
 
                     return (
                         <div
@@ -243,17 +290,16 @@ function ChatInterface({
                                             className={`text-md leading-relaxed ${isUser
                                                 ? 'text-right'
                                                 : 'text-left'
-                                                } ${isStructured ? 'structured-content' : ''}`}
+                                                }`}
                                         >
                                             {isUser ? (
                                                 <p className="whitespace-pre-wrap">
                                                     {rawText}
                                                 </p>
                                             ) : (
-                                                <div 
-                                                    className="prose prose-sm max-w-none"
-                                                    dangerouslySetInnerHTML={{ __html: formattedText }}
-                                                />
+                                                <div className="prose prose-sm max-w-none">
+                                                    <ReactMarkdown>{rawText}</ReactMarkdown>
+                                                </div>
                                             )}
                                         </div>
 
@@ -319,7 +365,7 @@ function ChatInterface({
                                         {'AI Assistant'}
                                     </span>
                                 </div>
-                                <div className="relative px-4 py-3 rounded-2xl bg-gradient-to-r from-gray-100 to-gray-200 text-gray-800 rounded-bl-md border border-gray-300">
+                                <div className="relative px-4 py-3 rounded-2xl bg-gradient-to-r from-gray-100 to-gray-200 text-gray-800 rounded-tl-md border border-gray-300">
                                     <div className="flex items-center gap-2 text-sm">
                                         <FontAwesomeIcon
                                             icon={faSpinner}
@@ -339,7 +385,7 @@ function ChatInterface({
             {/* Input Area */}
             <div className="relative overflow-hidden">
 
-                <div className="max-w-full flex gap-4 px-6 py-4 relative z-10 items-start justify-center">
+                <div className="max-w-full flex sm:gap-4 gap-2 sm:px-6 px-2 py-4 relative z-10 items-start justify-center">
 
                     {/* New Conversation Button */}
                     <div className="flex justify-center mt-1">
@@ -366,7 +412,7 @@ function ChatInterface({
                     {/* Message Input */}
                     <form
                         onSubmit={handleLocalSendMessage}
-                        className="relative w-full max-w-4xl"
+                        className="relative w-full sm:max-w-4xl"
                     >
                         <div
                             className={`flex items-end gap-3 bg-gradient-surface border border-gray-300 rounded-full p-3 focus-within:border-blue-400 focus-within:shadow-lg focus-within:shadow-blue-500/25 transition-all duration-300 backdrop-blur-sm px-8 py-2`}
@@ -376,7 +422,7 @@ function ChatInterface({
                                 value={inputValue}
                                 onChange={handleInputChange}
                                 onKeyDown={handleKeyPress}
-                                placeholder={'Chat'}
+                                placeholder={'Ask anything about insurance'}
                                 disabled={isAiTyping}
                                 className={`flex-1 bg-transparent text-gray-800 placeholder-gray-500 resize-none focus:outline-none max-h-[200px] min-h-[30px] leading-6`}
                                 rows="1"

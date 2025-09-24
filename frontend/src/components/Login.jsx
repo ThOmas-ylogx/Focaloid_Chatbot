@@ -141,7 +141,7 @@ const Login = () => {
                                     />
                                 </div>
                                 <h1 className="text-2xl font-bold bg-gradient-to-r from-gray-800 via-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
-                                    {'Welcome Back'}
+                                    {'Welcome to Insurance Q&A bot'}
                                 </h1>
                                 <p className="text-gray-700">
                                     {'Sign in to your account'}
