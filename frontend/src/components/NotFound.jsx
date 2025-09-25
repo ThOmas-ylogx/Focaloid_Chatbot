@@ -40,8 +40,8 @@ const NotFound = () => {
                 {/* Actions */}
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <Link
-                        to="/dashboard"
-                        className="inline-flex items-center gap-2 bg-gradient-secondary hover:bg-gradient-primary text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25"
+                        to="/login"
+                        className="inline-flex items-center gap-2 bg-gradient-secondary hover:bg-gradient-primary text-black font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25"
                     >
                         <FontAwesomeIcon icon={faHome} />
                         {'Go Home'}

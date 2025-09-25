@@ -3,7 +3,7 @@ import {
     faCopy,
     faPlusSquare
 } from '@fortawesome/free-regular-svg-icons'
-import { faUser, faRobot, faSpinner, faGlobe, faChevronDown, faChevronUp, faFileText } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faRobot, faSpinner, faGlobe, faComment } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState, useEffect, useRef } from 'react'
 import ReactMarkdown from 'react-markdown'
@@ -19,7 +19,6 @@ function ChatInterface({
     const [inputValue, setInputValue] = useState('')
     const [isAiTyping, setIsAiTyping] = useState(false)
     const [copiedMessageId, setCopiedMessageId] = useState(null)
-    const [expandedDocuments, setExpandedDocuments] = useState({})
     const chatHistoryRef = useRef(null)
     const textareaRef = useRef(null)
 
@@ -73,122 +72,22 @@ function ChatInterface({
         }
     }
 
-    const toggleDocumentExpansion = (messageId, docIndex) => {
-        const key = `${messageId}_${docIndex}`
-        setExpandedDocuments(prev => ({
-            ...prev,
-            [key]: !prev[key]
-        }))
-    }
 
-    const renderRetrievedDocuments = (documents, messageId) => {
+    const renderRetrievedDocuments = (documents, _messageId) => {
         if (!documents || documents.length === 0) return null
 
-        const isAccordionExpanded = expandedDocuments[`${messageId}_accordion`]
+        const isCommentAvailable = documents && documents[0]?.metadata?.Comment && documents[0]?.metadata?.Comment !== 'nan';
+
+        // Don't show anything if no comment
+        if (!isCommentAvailable) return null
 
         return (
-            <div className="mt-3 rounded-lg border border-gray-200">
-                {/* Accordion Header */}
-                <button
-                    onClick={() => toggleDocumentExpansion(messageId, 'accordion')}
-                    className="w-full flex items-center justify-between p-3 bg-gray-50 hover:bg-gray-100  transition-colors duration-200"
-                >
-                    <div className="flex items-center gap-2">
-                        <FontAwesomeIcon icon={faFileText} className="text-gray-500 text-sm" />
-                        <span className="text-sm font-medium text-gray-700">Retrieved Documents</span>
-                        <span className="text-xs bg-gray-200 text-gray-600 px-2 py-1 rounded-full">
-                            {documents.length} document{documents.length !== 1 ? 's' : ''}
-                        </span>
-                        {documents.some(doc => doc.metadata?.Comment && doc.metadata.Comment !== 'nan') && (
-                            <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">
-                                Comments Available
-                            </span>
-                        )}
-                    </div>
-                    <FontAwesomeIcon 
-                        icon={isAccordionExpanded ? faChevronUp : faChevronDown} 
-                        className="text-gray-500 text-sm transition-transform duration-200"
-                    />
-                </button>
-
-                {/* Accordion Content */}
-                {isAccordionExpanded && (
-                    <div className="mt-2 space-y-2 px-2">
-                        {documents.map((doc, index) => {
-                            const isDocExpanded = expandedDocuments[`${messageId}_doc_${index}`]
-                            const hasComment = doc.metadata?.Comment && doc.metadata.Comment !== 'nan'
-                            
-                            return (
-                                <div key={index} className="bg-white rounded-lg border border-gray-200 overflow-hidden">
-                                    {/* Document Header */}
-                                    <button
-                                        onClick={() => toggleDocumentExpansion(messageId, `doc_${index}`)}
-                                        className="w-full flex items-start justify-between p-3 hover:bg-gray-50 transition-colors duration-200"
-                                    >
-                                        <div className="flex-1 text-left">
-                                            <p className="text-sm text-gray-700 mb-2 line-clamp-2">
-                                                {doc.content}
-                                            </p>
-                                            <div className="flex items-center gap-4 text-xs text-gray-500">
-                                                <span>Answer: <strong className="text-gray-700">{doc.metadata?.Answer}</strong></span>
-                                                <span>Country: <strong className="text-gray-700">{doc.metadata?.Country}</strong></span>
-                                            </div>
-                                        </div>
-                                        <div className="ml-2 flex items-center gap-1">
-                                            {hasComment && (
-                                                <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full mr-2">
-                                                    Comment
-                                                </span>
-                                            )}
-                                            <FontAwesomeIcon 
-                                                icon={isDocExpanded ? faChevronUp : faChevronDown} 
-                                                className="text-gray-400 text-xs"
-                                            />
-                                        </div>
-                                    </button>
-
-                                    {/* Document Content */}
-                                    {isDocExpanded && (
-                                        <div className="px-3 pb-3">
-                                            <div className="border-t border-gray-100 pt-3">
-                                                <p className="text-sm text-gray-700 mb-3 leading-relaxed">
-                                                    {doc.content}
-                                                </p>
-                                                
-                                                {/* Comment Section */}
-                                                {hasComment && (
-                                                    <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
-                                                        <div className="flex items-start gap-2">
-                                                            <FontAwesomeIcon icon={faFileText} className="text-blue-600 text-xs mt-0.5" />
-                                                            <div>
-                                                                <span className="text-xs font-medium text-blue-700 block mb-1">Additional Comment:</span>
-                                                                <span className="text-sm text-blue-800">{doc.metadata.Comment}</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                )}
-
-                                                {/* Metadata */}
-                                                <div className="mt-3 pt-3 border-t border-gray-100">
-                                                    <div className="grid grid-cols-2 gap-2 text-xs">
-                                                        <div>
-                                                            <span className="text-gray-500">Answer:</span>
-                                                            <span className="ml-1 font-medium text-gray-700">{doc.metadata?.Answer}</span>
-                                                        </div>
-                                                        <div>
-                                                            <span className="text-gray-500">Country:</span>
-                                                            <span className="ml-1 font-medium text-gray-700">{doc.metadata?.Country}</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    )}
-                                </div>
-                            )
-                        })}
-                    </div>
-                )}
+            <div className="mt-2 border border-gray-200 rounded-lg p-2">
+                <div className="flex gap-2 text-left">
+                    <FontAwesomeIcon icon={faComment} className="text-sm text-black mt-1" />
+                    <span className="text-sm text-black">Comment: </span>
+                    <span className="text-sm text-black font-medium">{documents[0].metadata.Comment}</span>
+                </div>
             </div>
         )
     }
@@ -287,10 +186,7 @@ function ChatInterface({
                                     >
                                         {/* Message Text */}
                                         <div
-                                            className={`text-md leading-relaxed ${isUser
-                                                ? 'text-right'
-                                                : 'text-left'
-                                                }`}
+                                            className={`text-md leading-relaxed text-left`}
                                         >
                                             {isUser ? (
                                                 <p className="whitespace-pre-wrap">
@@ -353,7 +249,7 @@ function ChatInterface({
                 {isAiTyping && (
                     <div className="w-full py-4 flex justify-start">
                         <div className="flex gap-3 items-start max-w-[70%]">
-                            <div className="w-8 h-8 rounded-full bg-gradient-secondary text-white flex items-center justify-center flex-shrink-0">
+                            <div className="w-8 h-8 rounded-full bg-gradient-secondary text-black flex items-center justify-center flex-shrink-0">
                                 <FontAwesomeIcon
                                     icon={faRobot}
                                     className="text-sm"

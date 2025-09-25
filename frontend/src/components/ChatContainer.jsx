@@ -1,6 +1,6 @@
 
 import axios from 'axios'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom';
 
 import ChatInterface from './ChatInterface'
@@ -15,6 +15,7 @@ const initialMessage = {
 }
 function ChatContainer() {
     const location = useLocation();
+
     const { selectedCountry: initialCountry } = location.state || {};
 
     const [selectedCountry, setSelectedCountry] = useState(initialCountry);
@@ -23,7 +24,18 @@ function ChatContainer() {
     ])
     const [isModalOpen, setIsModalOpen] = useState(false);
 
+    // Automatically open modal if no country is selected
+    useEffect(() => {
+        if (!selectedCountry) {
+            setIsModalOpen(true);
+        }
+    }, [selectedCountry]);
+
     const handleSendMessage = async (messageText) => {
+        if (!selectedCountry) {
+            setIsModalOpen(true);
+            return;
+        }
 
         const payload = {
             message: messageText
@@ -75,9 +87,7 @@ function ChatContainer() {
     }
 
     return (
-        <div className="flex-1 flex flex-row overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 relative">
-            {/* Background gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10"></div>
+        <div className="flex-1 flex flex-row overflow-hidden relative bg-blue-100">
 
             <div className="flex-1 flex flex-col relative z-10">
                 <ChatInterface

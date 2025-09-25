@@ -1,6 +1,5 @@
 import {
     faUser,
-    faHome,
     faChevronDown,
     faSignOutAlt,
 } from '@fortawesome/free-solid-svg-icons'
@@ -43,19 +42,13 @@ function Header() {
 
 
             <div className="mx-auto flex items-center justify-between relative z-10">
-                <button className='shadow-2xl p-2 bg-gray-500 rounded-lg' onClick={() => navigate('/dashboard')}>
+                <div className='shadow-2xl p-2 bg-gray-500 rounded-lg' >
                     <img src="https://www.focaloid.com/wp-content/uploads/2025/04/Focaloid_logo_inverted-1.svg" alt="logo" className="max-w-35" />
-                </button>
-                <div className="flex items-center flex-wrap gap-4">
-                    <button
-                        onClick={() => navigate('/dashboard')}
-                        title="Home"
-                        className="text-white w-12 h-10 rounded-lg bg-gradient-glass hover:bg-gradient-primary transition-all duration-300 flex items-center justify-center backdrop-blur-sm"
-                    >
-                        <FontAwesomeIcon icon={faHome} className="text-lg" />
-                    </button>
+                </div>
 
-                    <div className="relative">
+                <div className="flex items-center flex-wrap gap-4">
+
+                    {user?.username && <div className="relative">
                         <button
                             className="flex items-center gap-2 bg-gradient-glass px-3 py-2 rounded-lg transition-all duration-300 backdrop-blur-sm"
                             onClick={() => setShowDropdown(!showDropdown)}
@@ -67,7 +60,7 @@ function Header() {
                                 />
                             </div>
                             <span className="text-black text-md font-semibold hidden sm:block truncate max-w-[100px]">
-                                {user?.username || 'User'}
+                                {user?.username}
                             </span>
                             <FontAwesomeIcon
                                 icon={faChevronDown}
@@ -106,7 +99,7 @@ function Header() {
                                 </div>
                             </div>
                         )}
-                    </div>
+                    </div>}
 
                 </div>
             </div>
