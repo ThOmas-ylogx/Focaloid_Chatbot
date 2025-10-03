@@ -127,13 +127,40 @@ The HuggingFace model (`sentence-transformers/all-MiniLM-L6-v2`) will be downloa
 
 ## Troubleshooting
 
+### Memory Issues (Most Common on Free Tier)
+
+**Issue**: `Ran out of memory (used over 512MB)` error
+- **Root Cause**: PyTorch is too large for Render's free tier (512MB limit)
+- **Solution**: The requirements.txt has been optimized to use CPU-only PyTorch which is much smaller
+- **What was changed**:
+  - Using `torch==2.5.1+cpu` instead of full PyTorch (~200MB vs ~800MB)
+  - Added `--no-cache-dir` flag to pip install to reduce memory usage
+  - Single worker configuration (`--workers 1`)
+  - Cache directories set to `/tmp` to avoid disk space issues
+
+**If still having memory issues, try these additional steps:**
+
+1. **Upgrade to Starter Plan** ($7/month) - gives you 512MB → 2GB RAM
+   - This is the most reliable solution for production
+
+2. **Use even lighter alternatives** (if you must stay on free tier):
+   ```bash
+   # In Render dashboard, try manually editing build command:
+   pip install --no-cache-dir --no-deps -r requirements.txt
+   pip install --no-cache-dir numpy scipy
+   ```
+
+3. **Monitor memory during build**:
+   - Check Render logs for memory usage patterns
+   - Identify which package is causing the spike
+
 ### Build Failures
 
 **Issue**: `ModuleNotFoundError` during build
 - **Solution**: Make sure all dependencies are in `requirements.txt`
 
 **Issue**: Build takes too long / times out
-- **Solution**: Consider using a smaller PyTorch build or CPU-only version
+- **Solution**: The CPU-only PyTorch should be much faster to install
 
 ### Runtime Errors
 

@@ -1,12 +1,23 @@
+# Core dependencies
+fastapi==0.117.1
+uvicorn[standard]==0.34.0
+python-dotenv==1.0.0
+pydantic==2.9.2
+
+# AI/ML dependencies (CPU-only, lightweight)
 openai==1.108.1
 langchain==0.3.27
 langchain_community==0.3.29
 langchain_huggingface==0.3.1
 langchain_chroma==0.2.6
-pandas==2.3.2
-fastapi==0.117.1
-python-dotenv==1.0.0
-torch==2.8.0
+
+# Use CPU-only PyTorch to save memory (much smaller than full PyTorch)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.5.1+cpu
 sentence-transformers==5.1.0
+
+# Data processing
+pandas==2.3.2
+
+# Vector store
 chromadb==1.1.0
-uvicorn[standard]==0.34.0
