@@ -28,9 +28,12 @@ logger = logging.getLogger("InsuranceQA_RAG")
 app = FastAPI(title="Insurance QA RAG Chatbot")
 
 # ---------------- CORS Configuration ----------------
+# Get allowed origins from environment variable or use defaults
+ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173").split(",")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],  # Frontend URLs
+    allow_origins=ALLOWED_ORIGINS,  # Frontend URLs
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods
     allow_headers=["*"],  # Allow all headers
@@ -107,6 +110,14 @@ def generate_answer(query: str, context_docs: List[Document]) -> str:
 
 
 # ---------------- API Endpoints ----------------
+@app.get("/")
+def root():
+    return {"status": "ok", "message": "Insurance QA RAG Chatbot API is running"}
+
+@app.get("/health")
+def health():
+    return {"status": "healthy", "db_loaded": db is not None, "llm_ready": llm_client is not None}
+
 @app.post("/chat")
 def chat(req: ChatRequest):
     logger.info(f"Received chat request: question='{req.question}', country='{req.country}'")
