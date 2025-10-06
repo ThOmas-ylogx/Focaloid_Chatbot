@@ -73,24 +73,26 @@ function ChatInterface({
     }
 
 
-    const renderRetrievedDocuments = (documents, _messageId) => {
-        if (!documents || documents.length === 0) return null
+    // const renderRetrievedDocuments = (documents) => {
+    //     if (!documents) return null
 
-        const isCommentAvailable = documents && documents[0]?.metadata?.Comment && documents[0]?.metadata?.Comment !== 'nan';
+    //     const isAnswerAvailable = documents && documents?.Answer;
+    //     const isCommentAvailable = documents && documents?.Comment && documents?.Comment !== 'nan';
 
-        // Don't show anything if no comment
-        if (!isCommentAvailable) return null
+    //     // Don't show anything if no answer
+    //     if (!isAnswerAvailable) return null
 
-        return (
-            <div className="mt-2 border border-gray-200 rounded-lg p-2">
-                <div className="flex gap-2 text-left">
-                    <FontAwesomeIcon icon={faComment} className="text-sm text-black mt-1" />
-                    <span className="text-sm text-black">Comment: </span>
-                    <span className="text-sm text-black font-medium">{documents[0].metadata.Comment}</span>
-                </div>
-            </div>
-        )
-    }
+    //     return (
+    //         <div className="">
+    //             <h3 className="text-md font-medium text-black text-left mb-2">{documents.Answer}</h3>
+    //             {isCommentAvailable && <div className="flex gap-2 text-left border border-gray-200 rounded-lg p-2">
+    //                 <FontAwesomeIcon icon={faComment} className="text-sm text-gray-600 mt-1" />
+    //                 <span className="text-sm text-gray-600">Comment: </span>
+    //                 <span className="text-sm text-gray-600 font-medium">{documents.Comment}</span>
+    //             </div>}
+    //         </div>
+    //     )
+    // }
 
     const handleInputChange = (e) => {
         setInputValue(e.target.value)
@@ -199,8 +201,8 @@ function ChatInterface({
                                             )}
                                         </div>
 
-                                        {/* Retrieved Documents for AI messages */}
-                                        {!isUser && msg.retrieved_documents && renderRetrievedDocuments(msg.retrieved_documents, msg.id)}
+                                        {/* source_metadata Documents for AI messages */}
+                                        {/* {!isUser && msg?.source_metadata && renderRetrievedDocuments(msg.source_metadata)} */}
 
                                         {/* Message Actions */}
                                         <div
@@ -216,7 +218,7 @@ function ChatInterface({
                                                 }
                                                 className={`flex items-center gap-1 px-2 py-1 text-[0.7rem] rounded-lg transition-all duration-300 ${isUser
                                                     ? 'bg-white/50 hover:bg-white/100 text-white'
-                                                    : 'bg-gray-300/50 hover:bg-gray-400/50 text-gray-700 hover:text-gray-800'
+                                                    : 'bg-gray-300/50 hover:bg-gray-200/50 text-gray-700 hover:text-gray-800'
                                                     }`}
                                                 title={'Copy message'}
                                             >

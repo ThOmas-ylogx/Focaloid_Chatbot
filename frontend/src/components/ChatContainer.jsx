@@ -50,12 +50,12 @@ function ChatContainer() {
             }
             )
 
-            const { answer, retrieved_documents } = response.data
+            const { answer, source_metadata } = response.data
             let aiMessage = {
                 id: `ai_${Date.now()}`,
-                message: answer,
+                message: answer === 'nan' ? 'Sorry, I am unable to answer based on the information that I can access' : answer,
                 sender: 'ai',
-                retrieved_documents: retrieved_documents
+                source_metadata: source_metadata
             }
 
             setMessages((prev) => [...prev, aiMessage])
