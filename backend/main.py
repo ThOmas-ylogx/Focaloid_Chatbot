@@ -126,7 +126,6 @@ def chat(req: ChatRequest):
     country_filter = req.country
 
     # Retrieve documents
-    docs: List[Document] = []
     if country_filter:
         logger.info(f"Querying Chroma DB with country filter: '{country_filter}'")
         results = query_db(db, query, country_filter, n_results=3)
@@ -134,25 +133,40 @@ def chat(req: ChatRequest):
         logger.info(f"Retrieved {len(docs)} documents with country filter.")
     else:
         logger.info("Querying Chroma DB without country filter (similarity search).")
-        docs = db.similarity_search(query, k=3)
+        results = db.similarity_search_with_score(query, k=3)
+        docs = [doc for doc, _ in results]
         logger.info(f"Retrieved {len(docs)} documents from similarity search.")
 
     if not docs:
         logger.warning("No relevant documents found for query.")
         return {"answer": "No relevant documents found for your query."}
 
-    # Generate answer
-    answer = generate_answer(query, docs)
+    # Get the top match (lowest distance = best match)
+    top_doc = docs[0]
+    metadata = top_doc.metadata or {}
 
-    # Log metadata of retrieved docs
-    for i, doc in enumerate(docs, start=1):
-        logger.debug(f"Doc {i}: content='{doc.page_content[:100]}...', metadata={doc.metadata}")
+    # Extract answer and comment fields
+    answer = (metadata.get("Answer") or "").strip()
+    comment = (metadata.get("Comment") or "").strip()
 
-    logger.info("Returning response to client.")
+    # Clean 'nan' or empty comments
+    if comment.lower() in ["nan", "none", "null", ""]:
+        comment = ""
+
+    # Merge comment with answer if available
+    if answer and comment:
+        final_answer = f"{answer}. {comment}"
+    elif answer:
+        final_answer = answer
+    else:
+        final_answer = "Answer not available in database."
+
+    logger.info(f"Returning combined answer: {final_answer}")
+
     return {
         "query": query,
-        "retrieved_documents": [
-            {"content": doc.page_content, "metadata": doc.metadata} for doc in docs
-        ],
-        "answer": answer,
+        "country": country_filter,
+        "answer": final_answer,
+        "source_metadata": metadata
     }
+

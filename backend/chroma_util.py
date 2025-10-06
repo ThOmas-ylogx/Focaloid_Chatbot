@@ -42,7 +42,7 @@ def query_db(db, question, country, n_results=3):
 # Example usage
 
 if __name__ == "__main__":
-    user_question = "How to file a car insurance claim in Nigeria?"
+    user_question = "Are there any Tariffs that you must apply for a specific Line of Business or cover?"
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
     db = Chroma(
@@ -50,4 +50,4 @@ if __name__ == "__main__":
         embedding_function=embeddings,
         persist_directory=CHROMA_DB_DIR
     )
-    query_db(user_question, country="Nigeria")
+    query_db(db, user_question, country="Nigeria")
