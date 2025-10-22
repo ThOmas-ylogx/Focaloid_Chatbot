@@ -118,6 +118,91 @@ def root():
 def health():
     return {"status": "healthy", "db_loaded": db is not None, "llm_ready": llm_client is not None}
 
+# @app.post("/chat")
+# def chat(req: ChatRequest):
+#     logger.info(f"Received chat request: question='{req.question}', country='{req.country}'")
+
+#     query = req.question
+#     country_filter = req.country
+
+#     # Retrieve documents
+#     if country_filter:
+#         logger.info(f"Querying Chroma DB with country filter: '{country_filter}'")
+#         results = query_db(db, query, country_filter, n_results=3)
+#         docs = [doc for doc, score in results]
+#         logger.info(f"Retrieved {len(docs)} documents with country filter.")
+#     else:
+#         logger.info("Querying Chroma DB without country filter (similarity search).")
+#         results = db.similarity_search_with_score(query, k=3)
+#         docs = [doc for doc, _ in results]
+#         logger.info(f"Retrieved {len(docs)} documents from similarity search.")
+
+#     if not docs:
+#         logger.warning("No relevant documents found for query.")
+#         return {"answer": "No relevant documents found for your query."}
+
+#     # Get the top match (lowest distance = best match)
+#     top_doc = docs[0]
+#     metadata = top_doc.metadata or {}
+
+#     # Extract answer and comment fields
+#     answer = (metadata.get("Answer") or "").strip()
+#     comment = (metadata.get("Comment") or "").strip()
+
+#     # Clean 'nan' or empty comments
+#     if comment.lower() in ["nan", "none", "null", ""]:
+#         comment = ""
+
+#     # Merge comment with answer if available
+#     if answer and comment:
+#         final_answer = f"{answer}. {comment}"
+#     else:
+#         final_answer = "Answer not available in database."
+
+#     logger.info(f"Returning combined answer: {final_answer}")
+
+#     return {
+#         "query": query,
+#         "country": country_filter,
+#         "answer": final_answer,
+#         "source_metadata": metadata
+#     }
+
+def interpret_answer_with_gpt(question: str, answer: str, comment: str) -> str:
+    """
+    Use GPT to interpret and combine the extracted 'Answer' and 'Comment'
+    fields into a coherent, user-friendly final answer.
+    """
+    if not answer and not comment:
+        return "Answer not available in database."
+
+    prompt = f"""
+    You are an insurance domain assistant. 
+    The user asked: "{question}"
+
+    Below is the retrieved information from the database:
+    - Answer: {answer or "N/A"}
+    - Comment: {comment or "N/A"}
+
+    Combine and interpret this information into a clear, natural, and helpful response for the user. 
+    If the comment adds clarification, merge it smoothly into the answer. 
+    Avoid repeating or using placeholder words like 'I don't have the answer for it kindly contact office'.
+    Answer in a professional, concise tone.
+    """
+
+    logger.info("Sending interpretation request to GPT...")
+
+    response = llm_client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[{"role": "user", "content": prompt}],
+        max_tokens=300,
+    )
+
+    final_text = response.choices[0].message.content.strip()
+    logger.info("GPT interpretation completed successfully.")
+    return final_text
+
+
 @app.post("/chat")
 def chat(req: ChatRequest):
     logger.info(f"Received chat request: question='{req.question}', country='{req.country}'")
@@ -125,48 +210,40 @@ def chat(req: ChatRequest):
     query = req.question
     country_filter = req.country
 
-    # Retrieve documents
+    # Step 1: Retrieve relevant documents
     if country_filter:
         logger.info(f"Querying Chroma DB with country filter: '{country_filter}'")
         results = query_db(db, query, country_filter, n_results=3)
         docs = [doc for doc, score in results]
-        logger.info(f"Retrieved {len(docs)} documents with country filter.")
     else:
         logger.info("Querying Chroma DB without country filter (similarity search).")
         results = db.similarity_search_with_score(query, k=3)
         docs = [doc for doc, _ in results]
-        logger.info(f"Retrieved {len(docs)} documents from similarity search.")
 
     if not docs:
-        logger.warning("No relevant documents found for query.")
         return {"answer": "No relevant documents found for your query."}
 
-    # Get the top match (lowest distance = best match)
+    # Step 2: Extract fields from top document
     top_doc = docs[0]
     metadata = top_doc.metadata or {}
 
-    # Extract answer and comment fields
     answer = (metadata.get("Answer") or "").strip()
     comment = (metadata.get("Comment") or "").strip()
 
-    # Clean 'nan' or empty comments
+    # Clean 'nan', 'none', etc.
     if comment.lower() in ["nan", "none", "null", ""]:
         comment = ""
+    if answer.lower() in ["nan", "none", "null", ""]:
+        answer = ""
 
-    # Merge comment with answer if available
-    if answer and comment:
-        final_answer = f"{answer}. {comment}"
-    elif answer:
-        final_answer = answer
-    else:
-        final_answer = "Answer not available in database."
-
-    logger.info(f"Returning combined answer: {final_answer}")
+    # Step 3: Use GPT to interpret and combine
+    final_answer = interpret_answer_with_gpt(query, answer, comment)
 
     return {
         "query": query,
         "country": country_filter,
         "answer": final_answer,
-        "source_metadata": metadata
+        "raw_answer": answer,
+        "raw_comment": comment,
+        "source_metadata": metadata,
     }
-
