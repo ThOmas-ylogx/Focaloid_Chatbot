@@ -1,0 +1,992 @@
+[
+  {
+    "question": "Are there any compulsory pricing regulations for specific insurance lines or types of coverage in your country?",
+    "country": "Cameroon",
+    "answer": "In our country, there are no compulsory pricing regulations for specific insurance lines or types of coverage. This means that insurers have the flexibility to set their own premium rates based on various factors.",
+    "source_metadata": {
+      "Country": "Cameroon",
+      "Answer": "No",
+      "hash": "70c60a728d598654b66e7220a985d42d",
+      "Comment": "nan"
+    }
+  },
+  {
+    "question": "Does your country have any state-backed or mandatory reinsurance pools or schemes?",
+    "country": "Cameroon",
+    "answer": "No, our country does not have any state-backed or mandatory reinsurance pools or schemes.",
+    "source_metadata": {
+      "hash": "70c60a728d598654b66e7220a985d42d",
+      "Answer": "No",
+      "Comment": "nan",
+      "Country": "Cameroon"
+    }
+  },
+  {
+    "question": "If so, please identify which insurance lines or cover types are included.",
+    "country": "Cameroon",
+    "answer": "Yes, the insurance coverage includes various lines or cover types. For specific details about which cover types are available, please let me know if you need further information or clarification.",
+    "source_metadata": {
+      "hash": "9e4af4a9eb46ce8d994d27436ae55e90",
+      "Answer": "Yes",
+      "Country": "Cameroon",
+      "Comment": "nan"
+    }
+  },
+  {
+    "question": "Is there a legally required minimum retention that insurers must maintain before ceding premiums?",
+    "country": "Cameroon",
+    "answer": "Yes, there is a legally required minimum retention that insurers must maintain before ceding premiums, which in the case of Leadway is set at 40%. This means that insurers are required to retain at least 40% of the premiums they collect before passing the remainder to reinsurers.",
+    "source_metadata": {
+      "Comment": "Leadway retention will be 40%",
+      "hash": "4c784024f37f33efc6560256b1adeff6",
+      "Country": "Cameroon",
+      "Answer": "Yes"
+    }
+  },
+  {
+    "question": "If applicable, what is the minimum retention percentage that must be held?",
+    "country": "Cameroon",
+    "answer": "The minimum retention percentage that must be held is 0%. This indicates that there are no required retention levels in this context. If you have any further questions or need additional clarification, feel free to ask.",
+    "source_metadata": {
+      "Answer": "0",
+      "Country": "Cameroon",
+      "hash": "241cd60a0e651ae534c344cfb6fbe1e0",
+      "Comment": "nan"
+    }
+  },
+  {
+    "question": "Are you obligated to go through a state reinsurer or approved intermediary before transferring a policy to Generali?",
+    "country": "Cameroon",
+    "answer": "You are not obligated to go through a state reinsurer or an approved intermediary before transferring a policy to Generali. If you have further questions about the process, please feel free to ask.",
+    "source_metadata": {
+      "Comment": "nan",
+      "hash": "2d7381bb0367b00e35842b6085420d09",
+      "Country": "Cameroon",
+      "Answer": "No"
+    }
+  },
+  {
+    "question": "If yes, please mention the name of the required reinsurer or intermediary.",
+    "country": "Cameroon",
+    "answer": "Answer not available in database.",
+    "source_metadata": {
+      "Answer": "nan",
+      "hash": "5bdbce3f1dfe415b316c11f18cd7c2a1",
+      "Country": "Cameroon",
+      "Comment": "nan"
+    }
+  },
+  {
+    "question": "If applicable, what is the commission rate allowed for the reinsurer?",
+    "country": "Cameroon",
+    "answer": "The commission rate allowed for the reinsurer is 0%. If you need further details or clarification, please let me know.",
+    "source_metadata": {
+      "Answer": "0",
+      "Comment": "nan",
+      "hash": "241cd60a0e651ae534c344cfb6fbe1e0",
+      "Country": "Cameroon"
+    }
+  },
+  {
+    "question": "If applicable, what percentage of retention applies to the reinsurer?",
+    "country": "Cameroon",
+    "answer": "The retention percentage applicable to the reinsurer is 0%. This indicates that the reinsurer does not retain any portion of the risk in this particular case.",
+    "source_metadata": {
+      "Country": "Cameroon",
+      "Answer": "0",
+      "Comment": "nan",
+      "hash": "241cd60a0e651ae534c344cfb6fbe1e0"
+    }
+  },
+  {
+    "question": "Do local laws require applying a Reinsurance Tax (RI Tax) when remitting premiums to Generali?",
+    "country": "Cameroon",
+    "answer": "Local laws do not require the application of a Reinsurance Tax (RI Tax) when remitting premiums to Generali. However, there is a mandatory levy of 2% that applies.",
+    "source_metadata": {
+      "Answer": "No",
+      "hash": "289ba0b8b123530a905e369857f26cbf",
+      "Comment": "There is a 2% mandatory levy",
+      "Country": "Cameroon"
+    }
+  },
+  {
+    "question": "If yes, what is the applicable rate or fixed amount of the RI Tax?",
+    "country": "Cameroon",
+    "answer": "The applicable rate for the Rhode Island (RI) Tax is based on gross premiums. If you need further details or specific figures, please check with the appropriate regulatory resources or your insurance provider for the most accurate and up-to-date information.",
+    "source_metadata": {
+      "Answer": "Gross",
+      "hash": "f63ed3addace40189d191c4cee5c6146",
+      "Country": "Cameroon",
+      "Comment": "nan"
+    }
+  },
+  {
+    "question": "If yes, how is the RI Tax calculated — on gross or net premiums?",
+    "country": "Cameroon",
+    "answer": "The Rhode Island (RI) Tax is calculated on gross premiums. This means that the total premium amount collected, before any deductions, is used to determine the tax liability. If you have any further questions or need more details on this topic, feel free to ask.",
+    "source_metadata": {
+      "Country": "Cameroon",
+      "Answer": "Gross",
+      "hash": "f63ed3addace40189d191c4cee5c6146",
+      "Comment": "nan"
+    }
+  },
+  {
+    "question": "Is the Cash Before Cover rule enforced in your jurisdiction?",
+    "country": "Cameroon",
+    "answer": "Yes, the Cash Before Cover rule is enforced in this jurisdiction. This means that policyholders are required to pay their premiums upfront before the insurance coverage becomes effective, as stipulated by the Premium Payment Warranty.",
+    "source_metadata": {
+      "hash": "92c653ec5c26f81c4635b274b9b66ffc",
+      "Answer": "Yes",
+      "Comment": "Premium Payment Warranty",
+      "Country": "Cameroon"
+    }
+  },
+  {
+    "question": "What are your normal payment terms for premium settlement in days from the invoice date?",
+    "country": "Cameroon",
+    "answer": "In Cameroon, the standard payment terms for premium settlement are cash before cover, meaning payment is required prior to policy coverage taking effect. Therefore, there are no specific terms in days from the invoice date for premium settlement.",
+    "source_metadata": {
+      "Comment": "Cameeroon is a strict cash before cover territory",
+      "hash": "06ecca14f536751a27f9f735b6442811",
+      "Country": "Cameroon",
+      "Answer": "nan"
+    }
+  },
+  {
+    "question": "What are your cancellation terms if a premium remains unpaid after the due date?",
+    "country": "Cameroon",
+    "answer": "If a premium remains unpaid after the due date, your policy will be suspended until the first premium is paid. It will remain in force for 28 days from the inception date. If payment is not made within this period, the policy will be suspended.",
+    "source_metadata": {
+      "Comment": "Please note that policy will be suspended until the first premium is paid and it will remain in force 28 days from inception after which it will be suspended",
+      "hash": "4f01efff420f81461d33b75d5ebb010b",
+      "Country": "Cameroon",
+      "Answer": "30"
+    }
+  },
+  {
+    "question": "What is your standard policy cancellation notice period in days?",
+    "country": "Cameroon",
+    "answer": "The standard policy cancellation notice period is 30 days, which begins 28 days from the policy's inception.",
+    "source_metadata": {
+      "Country": "Cameroon",
+      "Answer": "30",
+      "hash": "3e07b3aa7ae622fc43855bc6afacd4cc",
+      "Comment": "28 Days from inception"
+    }
+  },
+  {
+    "question": "Can you issue backdated policies where coverage starts before the issuance date?",
+    "country": "Cameroon",
+    "answer": "No, we cannot issue backdated policies where the coverage starts before the issuance date. Coverage will only be effective from the date the policy is officially issued. If you have any further questions or need assistance, feel free to ask.",
+    "source_metadata": {
+      "Answer": "No",
+      "Country": "Cameroon",
+      "hash": "eea9165d444b6a093f838d1a8ef9a226",
+      "Comment": "nan"
+    }
+  },
+  {
+    "question": "Are you permitted to provide a certificate or temporary proof of insurance before the full policy is released?",
+    "country": "Cameroon",
+    "answer": "Yes, you are permitted to receive a certificate or temporary proof of insurance before the full policy is released. This allows you to demonstrate coverage while waiting for the complete documentation. If you have further questions or need assistance with the process, feel free to ask.",
+    "source_metadata": {
+      "hash": "2db38cae282d9754b51e468cc624d640",
+      "Comment": "nan",
+      "Country": "Cameroon",
+      "Answer": "Yes"
+    }
+  },
+  {
+    "question": "Can policies be issued prior to signing the Slip or Reinsurance Covernote?",
+    "country": "Cameroon",
+    "answer": "Yes, policies can indeed be issued prior to signing the Slip or Reinsurance Covernote. This allows for coverage to begin without delay while the formal documentation is finalized.",
+    "source_metadata": {
+      "Answer": "Yes",
+      "Comment": "nan",
+      "hash": "8e7d2c8e59d19beb836da43c88075bd4",
+      "Country": "Cameroon"
+    }
+  },
+  {
+    "question": "Is it mandatory in your country to use a broker for policy issuance?",
+    "country": "Cameroon",
+    "answer": "In our country, it is not mandatory to use a broker for policy issuance. You can choose to obtain insurance policies directly from providers if you prefer.",
+    "source_metadata": {
+      "hash": "c3abb8a9ce3bbbd40aa102637dd393e8",
+      "Comment": "nan",
+      "Country": "Cameroon",
+      "Answer": "No"
+    }
+  },
+  {
+    "question": "Besides your local currency, in which other currencies are policies allowed to be issued?",
+    "country": "Cameroon",
+    "answer": "Policies can be issued in addition to your local currency in USD, EUR, and GBP. If you need further assistance or specific details regarding your policy, please feel free to reach out.",
+    "source_metadata": {
+      "Answer": "USD/EUR/GBP",
+      "hash": "8718bf02491ce6c58680e87a987c11da",
+      "Comment": "nan",
+      "Country": "Cameroon"
+    }
+  },
+  {
+    "question": "Do you have the option to take part in a Centralized Premium Collection (CPC) system?",
+    "country": "Cameroon",
+    "answer": "Yes, you have the option to participate in a Centralized Premium Collection (CPC) system. If you need further details about how it works or the implementation process, feel free to ask!",
+    "source_metadata": {
+      "hash": "e21b7a10c5c555d1eefc5e8a75445820",
+      "Comment": "nan",
+      "Country": "Cameroon",
+      "Answer": "Yes"
+    }
+  },
+  {
+    "question": "If so, can you only receive deductions like commissions, brokerage fees, and taxes directly?",
+    "country": "Cameroon",
+    "answer": "No, deductions such as commissions, brokerage fees, and taxes cannot be received directly. If you have further questions about the specifics of deductions and their processes, feel free to ask.",
+    "source_metadata": {
+      "Country": "Cameroon",
+      "hash": "8820c652685a1ed3c982589be069f2bc",
+      "Answer": "No",
+      "Comment": "nan"
+    }
+  },
+  {
+    "question": "How frequently do you submit Reinsurance Bordereaux to Generali — monthly, quarterly, etc.?",
+    "country": "Cameroon",
+    "answer": "We submit Reinsurance Bordereaux to Generali on a quarterly basis.",
+    "source_metadata": {
+      "Answer": "Quarterly",
+      "Comment": "nan",
+      "hash": "8724306cbbaef31e6a5a955ab4c4641f",
+      "Country": "Cameroon"
+    }
+  },
+  {
+    "question": "After closing a reporting period, how many days do you need to send Premium and Claims Bordereaux?",
+    "country": "Cameroon",
+    "answer": "After closing a reporting period, you have 60 days to send the Premium and Claims Bordereaux.",
+    "source_metadata": {
+      "Country": "Cameroon",
+      "hash": "31abdebd3442568549f8eb83f4236755",
+      "Comment": "nan",
+      "Answer": "60"
+    }
+  },
+  {
+    "question": "What is the name of your banking institution?",
+    "country": "Cameroon",
+    "answer": "The name of our banking institution is provided in the attached document. Additionally, please refer to column D for the bank's address. If you have any further questions or need more information, feel free to ask.",
+    "source_metadata": {
+      "hash": "5920e4fe20aae4fe9ad54667874b9b96",
+      "Country": "Cameroon",
+      "Comment": "Please indicate us the bank address on column D",
+      "Answer": "AS PER THE ATTACHED "
+    }
+  },
+  {
+    "question": "Please provide your official bank account number.",
+    "country": "Cameroon",
+    "answer": "Answer not available in database.",
+    "source_metadata": {
+      "Country": "Cameroon",
+      "Answer": "nan",
+      "hash": "efba4c7cdcf23376dca843309a4fa4a2",
+      "Comment": "nan"
+    }
+  },
+  {
+    "question": "Which currency is your bank account maintained in?",
+    "country": "Cameroon",
+    "answer": "Answer not available in database.",
+    "source_metadata": {
+      "Comment": "nan",
+      "Country": "Cameroon",
+      "Answer": "nan",
+      "hash": "bfe931649b70715010866e19989e6c03"
+    }
+  },
+  {
+    "question": "What jurisdiction governs your Casualty and Financial Lines policies?",
+    "country": "Cameroon",
+    "answer": "The jurisdiction governing our Casualty and Financial Lines policies is Nigeria. If you have any further questions or need assistance, feel free to ask.",
+    "source_metadata": {
+      "Comment": "nan",
+      "hash": "965fd86ff20b49de66a7596b6fbf50e7",
+      "Country": "Cameroon",
+      "Answer": "NIGERIA"
+    }
+  },
+  {
+    "question": "If you exclude pandemics or communicable diseases (like COVID-19), please share the exclusion wording.",
+    "country": "Cameroon",
+    "answer": "Unfortunately, we do not have specific wording regarding exclusions for pandemics or communicable diseases available at this moment. Please provide us with more details in column C, and we will assist you further.",
+    "source_metadata": {
+      "Country": "Cameroon",
+      "Comment": "We kindly ask you to provide us the answer on column C",
+      "Answer": "nan",
+      "hash": "175b807f5b6d4ff8dd213a263d868843"
+    }
+  },
+  {
+    "question": "Do you exclude pandemic-related losses as triggers under Public Authority clauses for Business Interruption?",
+    "country": "Cameroon",
+    "answer": "Answer not available in database.",
+    "source_metadata": {
+      "hash": "bb67d66ba7654a861186aae468081d4f",
+      "Comment": "nan",
+      "Country": "Cameroon",
+      "Answer": "nan"
+    }
+  },
+  {
+    "question": "If so, please share the exact wording used in your Public Authority clause.",
+    "country": "Cameroon",
+    "answer": "Certainly! Here is the wording for the Public Authority clause regarding the reinstatement of buildings:\n\n---\n\n### Reinstatement of Buildings – Compliance with Regulations (Cameroon)\n\nThis policy extends coverage for the additional costs of reinstating destroyed or damaged property to comply with Building Regulations, Government Ordinances, or Bye-Laws set by any Municipal or Local Authority within the Republic of Cameroon. Coverage is provided under the following conditions:\n\n1. **Exclusions**: The recoverable amount does not include:\n   - Costs for compliance related to destruction or damage occurring before this extension was granted.\n   - Costs for destruction or damage not covered by this policy.\n   - Costs for compliance related to undamaged property or undamaged portions of property (other than foundations) when notice was served to the Insured prior to the damage.\n   - Additional costs that would have been needed to reinstate the property to a condition equal to its original state if no compliance was necessary.\n   - Any rates, taxes, or charges related to capital appreciation due to compliance with the aforementioned regulations.\n\n2. **Reinstatement Work**: All reinstatement work must commence and be completed within twenty-four (24) months after the destruction or damage occurred. Extensions may be granted by the Insurers in writing. Reinstatement may occur on another site in Cameroon if required by regulations, provided the Insurer's liability remains unchanged.\n\n3. **Proportional Reduction**: If the Insurer’s liability is reduced under the policy's terms",
+    "source_metadata": {
+      "Comment": "nan",
+      "hash": "337cfcdd87bada898d5a60aecebdd95d",
+      "Answer": "Reinstatement of Buildings – Compliance with Regulations (Cameroon)\n\nThe insurance on Buildings under this policy extends to include such additional cost of reinstatement of the destroyed or damaged property hereby insured as may be incurred solely by reason of the necessity to comply with Building Regulations, Government Ordinances, or Bye-Laws of any Municipal or Local Authority within the Republic of Cameroon, provided that:\n\nThe amount recoverable under this Extension shall not include:\n\nAny cost incurred in complying with the aforesaid Regulations, Ordinances, or Bye-Laws:\n\nin respect of destruction or damage occurring prior to the granting of this Extension;\n\nin respect of destruction or damage not insured by this policy;\n\nwhere notice has been served upon the Insured prior to the happening of the destruction or damage, in respect of undamaged property or undamaged portions of property, other than foundations (unless foundations are expressly excluded from this policy).\n\nThe additional cost that would have been required to reinstate the damaged or destroyed property to a condition equal to its condition when new, had compliance with the aforesaid Regulations, Ordinances, or Bye-Laws not been necessary.\n\nAny rate, tax, duty, development levy, or other charge or assessment arising out of capital appreciation, payable in respect of the property or by the owner thereof, by reason of compliance with the aforesaid Regulations, Ordinances, or Bye-Laws.\n\nReinstatement Work:\nThe work of reinstatement must be commenced and carried out with reasonable despatch and in any case must be completed within twenty-four (24) months after the occurrence of the destruction or damage, or within such further time as the Insurers may (during the said twenty-four months) in writing allow. Such reinstatement may be carried out wholly or partially upon another site in Cameroon (if so required by the aforesaid Regulations, Ordinances, or Bye-Laws), subject always to the liability of the Insurers under this Extension not being thereby increased.\n\nProportional Reduction:\nIf the liability of the Insurers under the policy (apart from this Extension) shall be reduced by the application of any terms and conditions of the policy, then the liability of the Insurers under this Extension shall likewise be reduced in the same proportion.\n\nMaximum Liability:\nThe total amount recoverable in respect of Buildings shall not exceed the sum insured thereon (included within the total sum insured by this policy).\n\nPolicy Conditions:\nAll the terms, conditions, and provisions of the policy, except insofar as they are expressly varied herein, shall apply as if they had been incorporated into this Extension.",
+      "Country": "Cameroon"
+    }
+  },
+  {
+    "question": "Do your policy documents contain a Sanctions Clause?",
+    "country": "Cameroon",
+    "answer": "Yes, our policy documents do contain a Sanctions Clause. If you have any specific questions or need further details regarding this clause, feel free to ask.",
+    "source_metadata": {
+      "Country": "Cameroon",
+      "Answer": "Yes",
+      "Comment": "nan",
+      "hash": "6df634db777b5ac820fdabcd1550504c"
+    }
+  },
+  {
+    "question": "If yes, please share the text of the Sanctions Clause.",
+    "country": "Cameroon",
+    "answer": "The Sanctions Clause states: \"No insurer shall be deemed to provide cover and no insurer shall be liable to pay any claim or provide any benefit hereunder to the extent that the provision of such cover, payment of such claim, or provision of such benefit would expose the insurer or its parent to any sanction, prohibition or restriction implemented pursuant to resolutions of the United Nations or the trade and economic sanctions, laws, or regulations of the Republic of Cameroon, the African Union, the European Union, the United Kingdom, or the United States of America.\"\n\nIt has been noted that the wording of the Sanctions Clause appears to be identical to that of the Public Authority Clause. Please verify this to ensure that both clauses are distinct and accurately reflect their intended meanings. If you need further assistance or clarification on either clause, feel free to ask.",
+    "source_metadata": {
+      "Answer": "No insurer shall be deemed to provide cover and no insurer shall be liable to pay any claim or provide any benefit hereunder to the extent that the provision of such cover, payment of such claim or provision of such benefit would expose the insurer or its parent to any sanction, prohibition or restriction implemented pursuant to resolutions of the United Nations or the trade and economic sanctions, laws, or regulations of the Republic of Cameroon, the African Union, the European Union, the United Kingdom, or the United States of America.",
+      "Comment": "We noticed that the Public autority clause wording is the same as the wording indicated for  Sanctions Clause. Could you please check and send us the correct wording for both clauses?",
+      "Country": "Cameroon",
+      "hash": "7f900313b7b76962c270016fd7a83873"
+    }
+  },
+  {
+    "question": "Do you perform sanctions screening or use tools to comply with local and global sanction rules?",
+    "country": "Cameroon",
+    "answer": "Yes, we perform sanctions screening and utilize tools to ensure compliance with both local and global sanction rules. This process helps us to maintain the integrity of our operations and adhere to regulatory requirements.",
+    "source_metadata": {
+      "Answer": "Yes",
+      "Comment": "nan",
+      "hash": "11b2653bd7ce04578fc2350557d24543",
+      "Country": "Cameroon"
+    }
+  },
+  {
+    "question": "For Marine Cargo policies, are there Incoterms requiring local insurance coverage?",
+    "country": "Cameroon",
+    "answer": "Yes, there are specific Incoterms that may require local insurance coverage for Marine Cargo policies. It's important to review the terms of each Incoterm to determine the insurance obligations and ensure compliance with local regulations.",
+    "source_metadata": {
+      "Answer": "Yes",
+      "hash": "9e4af4a9eb46ce8d994d27436ae55e90",
+      "Country": "Cameroon",
+      "Comment": "nan"
+    }
+  },
+  {
+    "question": "Is local insurance mandatory for marine imports, exports, or domestic shipments?",
+    "country": "Cameroon",
+    "answer": "Yes, local insurance is mandatory for marine imports, exports, and domestic shipments. This requirement is in place to ensure adequate coverage and protection during transit.",
+    "source_metadata": {
+      "hash": "3d53624a681bfa3807c89c455940f7f8",
+      "Answer": "Yes",
+      "Comment": "nan",
+      "Country": "Cameroon"
+    }
+  },
+  {
+    "question": "Is broker approval of the draft policy required before issuance under local regulation?",
+    "country": "Cameroon",
+    "answer": "Broker approval of the draft policy is not required before issuance under local regulation.",
+    "source_metadata": {
+      "Country": "Cameroon",
+      "Answer": "No",
+      "Comment": "nan",
+      "hash": "b97de6528978cb08769952d2529e3f2a"
+    }
+  },
+  {
+    "question": "Are you authorized to engage and collaborate with Third-Party Administrators (TPAs)?",
+    "country": "Cameroon",
+    "answer": "No, I am not authorized to engage and collaborate with Third-Party Administrators (TPAs). If you have specific inquiries or need further clarification on this matter, please let me know, and I’ll do my best to assist you.",
+    "source_metadata": {
+      "Answer": "No",
+      "Comment": "PLEASE CLARIFY",
+      "hash": "573f271f14ed6235d658c967349091a8",
+      "Country": "Cameroon"
+    }
+  },
+  {
+    "question": "Do you keep an approved list of Third-Party Administrators you work with?",
+    "country": "Cameroon",
+    "answer": "We do not maintain an approved list of Third-Party Administrators that we work with. If you need further clarification or have specific inquiries regarding our partnerships, please let us know.",
+    "source_metadata": {
+      "Country": "Cameroon",
+      "Answer": "No",
+      "Comment": "PLEASE CLARIFY",
+      "hash": "573f271f14ed6235d658c967349091a8"
+    }
+  },
+  {
+    "question": "Can you delegate claim-handling authority to a TPA or Generali as reinsurer?",
+    "country": "Cameroon",
+    "answer": "Yes, you can delegate claim-handling authority to a Third-Party Administrator (TPA) or to Generali as a reinsurer. This delegation allows for streamlined processing and management of claims. If you have any further questions or need assistance with the specifics, please let me know.",
+    "source_metadata": {
+      "hash": "124bbc11180cbb450b78e8670ff9fc33",
+      "Answer": "Yes",
+      "Country": "Cameroon",
+      "Comment": "nan"
+    }
+  },
+  {
+    "question": "Can clients request an English-language, non-binding copy of the policy?",
+    "country": "Cameroon",
+    "answer": "Yes, clients can request an English-language, non-binding copy of the policy. The policy is originally issued in English, ensuring clarity and understanding.",
+    "source_metadata": {
+      "Answer": "Yes",
+      "hash": "cefed8aa908ff224be0313ff3c6ba6c8",
+      "Country": "Cameroon",
+      "Comment": "The policy is issued originally in English"
+    }
+  },
+  {
+    "question": "Do you need to collect specific documents, such as KYC, before issuing a local policy?",
+    "country": "Cameroon",
+    "answer": "Yes, specific documents are required before issuing a local policy. These typically include a completed proposal form and the company's Certificate of Incorporation (CAC). Collecting these documents is essential for compliance and to ensure a smooth policy issuance process.",
+    "source_metadata": {
+      "Answer": "Yes",
+      "Country": "Cameroon",
+      "Comment": "Proposal form, Company CAC",
+      "hash": "b0e7aa835e0fbe947e85309657c6ffe1"
+    }
+  },
+  {
+    "question": "Are Property policies allowed to be issued on an All Risks basis in your country?",
+    "country": "Cameroon",
+    "answer": "Yes, property policies can be issued on an All Risks basis in this country. This type of coverage typically includes a wide range of risks, providing extensive protection for policyholders.",
+    "source_metadata": {
+      "Country": "Cameroon",
+      "Comment": "nan",
+      "Answer": "Yes",
+      "hash": "666b18efd2c2952dffe687723eee6e28"
+    }
+  },
+  {
+    "question": "If Cyber risk is excluded, please provide the exclusion wording.",
+    "country": "Cameroon",
+    "answer": "I’m sorry, but the specific exclusion wording for cyber risk is currently not available in our database. If you need further assistance or have specific requirements regarding cyber risk exclusions, please feel free to reach out for more information.",
+    "source_metadata": {
+      "Comment": "nan",
+      "hash": "978f01cf01af5e29d975f78095434eb1",
+      "Country": "Cameroon",
+      "Answer": "Not available"
+    }
+  },
+  {
+    "question": "Do certain business lines or coverage types have mandatory tariffs in your jurisdiction?",
+    "country": "Nigeria",
+    "answer": "Yes, certain business lines and coverage types do have mandatory tariffs in our jurisdiction. Specifically, there is a PRAN rating applicable for Fire policies, while Motor insurance has a compulsory rate set at 5%. Additionally, Travel insurance also falls under mandatory tariff regulations.",
+    "source_metadata": {
+      "Comment": "For Fire policy, we have the PRAN rating, For Motor we have a compulsory rate of 5% and also Travel",
+      "Answer": "Yes",
+      "Country": "Nigeria",
+      "hash": "78cce263e6f50569de9247ce59cf81d6"
+    }
+  },
+  {
+    "question": "Are there government-operated or compulsory reinsurance schemes in your country?",
+    "country": "Nigeria",
+    "answer": "Currently, there are no government-operated or compulsory reinsurance schemes in your country.",
+    "source_metadata": {
+      "Comment": "nan",
+      "Country": "Nigeria",
+      "Answer": "No",
+      "hash": "70c60a728d598654b66e7220a985d42d"
+    }
+  },
+  {
+    "question": "If applicable, which lines of business or insurance covers fall under these schemes?",
+    "country": "Nigeria",
+    "answer": "In Nigeria, various lines of business or insurance covers may fall under specific schemes. However, without further details about the particular schemes you are referring to, it is challenging to provide a comprehensive list. If you can specify the schemes or types of insurance you are interested in, I would be happy to assist you further.",
+    "source_metadata": {
+      "Comment": "nan",
+      "Answer": "NIGERIA",
+      "hash": "965fd86ff20b49de66a7596b6fbf50e7",
+      "Country": "Nigeria"
+    }
+  },
+  {
+    "question": "Is there a minimum level of retention required before ceding premiums to reinsurers?",
+    "country": "Nigeria",
+    "answer": "Yes, there is a minimum level of retention required before ceding premiums to reinsurers. For Leadway, the retention rate is set at 50%. This means that Leadway will retain 50% of the premium before transferring the remainder to reinsurers.",
+    "source_metadata": {
+      "hash": "4c784024f37f33efc6560256b1adeff6",
+      "Answer": "Yes",
+      "Comment": "Leadway retention will be 50%",
+      "Country": "Nigeria"
+    }
+  },
+  {
+    "question": "If so, please mention the required retention percentage.",
+    "country": "Nigeria",
+    "answer": "The required retention percentage is 0%. If you have any further questions or need additional information, please let me know.",
+    "source_metadata": {
+      "Country": "Nigeria",
+      "hash": "241cd60a0e651ae534c344cfb6fbe1e0",
+      "Answer": "0",
+      "Comment": "nan"
+    }
+  },
+  {
+    "question": "Do regulations require involving a state reinsurer or designated intermediary before working with Generali?",
+    "country": "Nigeria",
+    "answer": "No, regulations do not require involving a state reinsurer or designated intermediary prior to working with Generali. You can proceed directly without the need for these intermediaries.",
+    "source_metadata": {
+      "Country": "Nigeria",
+      "Comment": "nan",
+      "Answer": "No",
+      "hash": "2d7381bb0367b00e35842b6085420d09"
+    }
+  },
+  {
+    "question": "If yes, please indicate the reinsurer’s name.",
+    "country": "Nigeria",
+    "answer": "Answer not available in database.",
+    "source_metadata": {
+      "Comment": "nan",
+      "Country": "Nigeria",
+      "Answer": "nan",
+      "hash": "5bdbce3f1dfe415b316c11f18cd7c2a1"
+    }
+  },
+  {
+    "question": "If yes, please state the commission rate that applies to the reinsurer.",
+    "country": "Nigeria",
+    "answer": "The commission rate that applies to the reinsurer is 0%. If you need further information or assistance, feel free to ask.",
+    "source_metadata": {
+      "Country": "Nigeria",
+      "Answer": "0",
+      "hash": "241cd60a0e651ae534c344cfb6fbe1e0",
+      "Comment": "nan"
+    }
+  },
+  {
+    "question": "If yes, please specify the reinsurer’s retention percentage.",
+    "country": "Nigeria",
+    "answer": "The reinsurer’s retention percentage is 0%. This indicates that the reinsurer is not retaining any portion of the risk. If you have any further questions or need additional clarification, feel free to ask.",
+    "source_metadata": {
+      "Country": "Nigeria",
+      "hash": "241cd60a0e651ae534c344cfb6fbe1e0",
+      "Comment": "nan",
+      "Answer": "0"
+    }
+  },
+  {
+    "question": "Do you apply a Reinsurance Tax when sending premiums to Generali?",
+    "country": "Nigeria",
+    "answer": "No, there is no Reinsurance Tax applied when sending premiums to Generali. However, please note that a 1% mandatory levy is applicable.",
+    "source_metadata": {
+      "Answer": "No",
+      "hash": "289ba0b8b123530a905e369857f26cbf",
+      "Country": "Nigeria",
+      "Comment": "There is a 1% mandatory levy"
+    }
+  },
+  {
+    "question": "If yes, what is the applicable RI Tax rate or amount?",
+    "country": "Nigeria",
+    "answer": "The applicable Rhode Island (RI) tax rate is based on gross income. If you need specific rates or amounts, please refer to the relevant tax guidelines or consult a tax professional for detailed information.",
+    "source_metadata": {
+      "Answer": "Gross",
+      "Country": "Nigeria",
+      "Comment": "nan",
+      "hash": "f63ed3addace40189d191c4cee5c6146"
+    }
+  },
+  {
+    "question": "If yes, is the RI Tax calculated based on gross or net premium?",
+    "country": "Nigeria",
+    "answer": "The RI Tax is calculated based on the gross premium.",
+    "source_metadata": {
+      "hash": "f63ed3addace40189d191c4cee5c6146",
+      "Country": "Nigeria",
+      "Comment": "nan",
+      "Answer": "Gross"
+    }
+  },
+  {
+    "question": "Does the Cash Before Cover requirement apply in your jurisdiction?",
+    "country": "Nigeria",
+    "answer": "Yes, the Cash Before Cover requirement does apply in your jurisdiction. This means that a premium payment warranty is in effect, indicating that coverage will only begin once the premium has been fully paid.",
+    "source_metadata": {
+      "Answer": "Yes",
+      "Comment": "Premium Payment Warranty",
+      "Country": "Nigeria",
+      "hash": "92c653ec5c26f81c4635b274b9b66ffc"
+    }
+  },
+  {
+    "question": "What are your usual premium payment terms in days from invoice issuance?",
+    "country": "Nigeria",
+    "answer": "In Nigeria, the standard practice for premium payments is cash payment before coverage is provided. Therefore, there are no specific premium payment terms in days from invoice issuance, as coverage begins only upon receipt of payment.",
+    "source_metadata": {
+      "Answer": "nan",
+      "Country": "Nigeria",
+      "hash": "06ecca14f536751a27f9f735b6442811",
+      "Comment": "Nigeria is a strict cash before cover territory"
+    }
+  },
+  {
+    "question": "What cancellation rules apply if a client fails to pay within the payment window?",
+    "country": "Nigeria",
+    "answer": "If a client fails to pay within the payment window, the policy will be suspended until the first premium is paid. It will remain in force for 30 days from the inception date, after which it will be fully suspended if payment has not been made.",
+    "source_metadata": {
+      "Answer": "30",
+      "hash": "4f01efff420f81461d33b75d5ebb010b",
+      "Comment": "Please note that policy will be suspended until the first premium is paid and it will remain in force 30 days from inception after which it will be suspended",
+      "Country": "Nigeria"
+    }
+  },
+  {
+    "question": "What is the standard notice period for policy cancellation in your country?",
+    "country": "Nigeria",
+    "answer": "The standard notice period for policy cancellation in your country is 30 days from the date of inception. This means that you must notify your insurer at least 30 days before you wish to cancel your policy.",
+    "source_metadata": {
+      "Answer": "30",
+      "hash": "3e07b3aa7ae622fc43855bc6afacd4cc",
+      "Comment": "30 Days from inception",
+      "Country": "Nigeria"
+    }
+  },
+  {
+    "question": "Is backdating of policies permitted, allowing retroactive coverage?",
+    "country": "Nigeria",
+    "answer": "Backdating of insurance policies to provide retroactive coverage is not permitted. If you have further questions about your specific situation or policy options, please feel free to ask.",
+    "source_metadata": {
+      "Country": "Nigeria",
+      "Comment": "nan",
+      "hash": "eea9165d444b6a093f838d1a8ef9a226",
+      "Answer": "No"
+    }
+  },
+  {
+    "question": "Can a temporary certificate or insurance proof be issued before the main policy?",
+    "country": "Nigeria",
+    "answer": "Yes, a temporary certificate or proof of insurance can be issued before the main policy is finalized. This allows you to have coverage in place while the policy details are being completed. If you have further questions or need assistance, feel free to reach out.",
+    "source_metadata": {
+      "hash": "2db38cae282d9754b51e468cc624d640",
+      "Answer": "Yes",
+      "Country": "Nigeria",
+      "Comment": "nan"
+    }
+  },
+  {
+    "question": "Are policies allowed to be issued before the Slip or Covernote is signed?",
+    "country": "Nigeria",
+    "answer": "Yes, policies can be issued before the Slip or Covernote is signed. This means that coverage may begin even prior to the formal documentation being completed.",
+    "source_metadata": {
+      "Country": "Nigeria",
+      "hash": "8e7d2c8e59d19beb836da43c88075bd4",
+      "Answer": "Yes",
+      "Comment": "nan"
+    }
+  },
+  {
+    "question": "Must policies be issued through a licensed broker in your country?",
+    "country": "Nigeria",
+    "answer": "In our country, it is not required for insurance policies to be issued through a licensed broker. This allows individuals and businesses the flexibility to explore and purchase policies directly from insurers if they choose to do so.",
+    "source_metadata": {
+      "Answer": "No",
+      "Comment": "nan",
+      "hash": "c3abb8a9ce3bbbd40aa102637dd393e8",
+      "Country": "Nigeria"
+    }
+  },
+  {
+    "question": "Apart from the local currency, what other currencies can policies be written in?",
+    "country": "Nigeria",
+    "answer": "Policies can be written in several currencies apart from the local currency, including USD, EUR, and GBP.",
+    "source_metadata": {
+      "Comment": "nan",
+      "hash": "8718bf02491ce6c58680e87a987c11da",
+      "Answer": "USD/EUR/GBP",
+      "Country": "Nigeria"
+    }
+  },
+  {
+    "question": "Can your company take part in a Centralized Premium Collection program?",
+    "country": "Nigeria",
+    "answer": "Yes, our company can participate in a Centralized Premium Collection program. If you have any specific questions or need further details, feel free to ask.",
+    "source_metadata": {
+      "Answer": "Yes",
+      "Country": "Nigeria",
+      "hash": "e21b7a10c5c555d1eefc5e8a75445820",
+      "Comment": "nan"
+    }
+  },
+  {
+    "question": "If yes, can you only directly receive deductions like brokerage, taxes, and fees?",
+    "country": "Nigeria",
+    "answer": "No, you cannot only receive deductions such as brokerage, taxes, and fees directly. There are other applicable deductions to consider as well. If you have further questions about specific deductions, feel free to ask!",
+    "source_metadata": {
+      "hash": "8820c652685a1ed3c982589be069f2bc",
+      "Country": "Nigeria",
+      "Answer": "No",
+      "Comment": "nan"
+    }
+  },
+  {
+    "question": "How often are Reinsurance Bordereaux reports sent to Generali — monthly or quarterly?",
+    "country": "Nigeria",
+    "answer": "Reinsurance Bordereaux reports are sent to Generali on a quarterly basis.",
+    "source_metadata": {
+      "Comment": "nan",
+      "hash": "8724306cbbaef31e6a5a955ab4c4641f",
+      "Country": "Nigeria",
+      "Answer": "Quarterly"
+    }
+  },
+  {
+    "question": "After each reporting period, how many days do you take to deliver Premium and Claims Bordereaux?",
+    "country": "Nigeria",
+    "answer": "After each reporting period, we take 60 days to deliver the Premium and Claims Bordereaux. If you have any further questions or need assistance, feel free to ask.",
+    "source_metadata": {
+      "Country": "Nigeria",
+      "hash": "31abdebd3442568549f8eb83f4236755",
+      "Answer": "60",
+      "Comment": "nan"
+    }
+  },
+  {
+    "question": "What is the official name of your banking institution?",
+    "country": "Nigeria",
+    "answer": "The official name of our banking institution is provided in the attached document. Additionally, please refer to column D of the attachment for the bank's address. If you have any further questions or need assistance, please let me know.",
+    "source_metadata": {
+      "hash": "5920e4fe20aae4fe9ad54667874b9b96",
+      "Comment": "Please indicate us the bank address on column D",
+      "Country": "Nigeria",
+      "Answer": "AS PER THE ATTACHED "
+    }
+  },
+  {
+    "question": "Please provide your official bank account details.",
+    "country": "Nigeria",
+    "answer": "Answer not available in database.",
+    "source_metadata": {
+      "hash": "efba4c7cdcf23376dca843309a4fa4a2",
+      "Comment": "nan",
+      "Answer": "nan",
+      "Country": "Nigeria"
+    }
+  },
+  {
+    "question": "In what currency is your bank account maintained?",
+    "country": "Nigeria",
+    "answer": "Answer not available in database.",
+    "source_metadata": {
+      "Country": "Nigeria",
+      "hash": "bfe931649b70715010866e19989e6c03",
+      "Comment": "nan",
+      "Answer": "nan"
+    }
+  },
+  {
+    "question": "Which legal jurisdiction applies to Casualty and Financial Lines policies?",
+    "country": "Nigeria",
+    "answer": "The legal jurisdiction applicable to Casualty and Financial Lines policies is Nigeria. If you have further questions or need additional details, feel free to ask.",
+    "source_metadata": {
+      "Country": "Nigeria",
+      "Answer": "NIGERIA",
+      "Comment": "nan",
+      "hash": "965fd86ff20b49de66a7596b6fbf50e7"
+    }
+  },
+  {
+    "question": "If pandemics or infectious diseases are excluded, please share the exclusion wording.",
+    "country": "Nigeria",
+    "answer": "Unfortunately, we do not have the specific exclusion wording related to pandemics or infectious diseases available at this time. If you require further assistance or need detailed information, please provide me with more context, and I will do my best to help.",
+    "source_metadata": {
+      "hash": "175b807f5b6d4ff8dd213a263d868843",
+      "Answer": "nan",
+      "Country": "Nigeria",
+      "Comment": "We kindly ask you to provide us the answer on column C"
+    }
+  },
+  {
+    "question": "For Business Interruption policies under Public Authority clauses, are pandemic losses excluded as triggers?",
+    "country": "Nigeria",
+    "answer": "Answer not available in database.",
+    "source_metadata": {
+      "hash": "bb67d66ba7654a861186aae468081d4f",
+      "Answer": "nan",
+      "Comment": "nan",
+      "Country": "Nigeria"
+    }
+  },
+  {
+    "question": "If yes, please provide the specific Public Authority clause wording.",
+    "country": "Nigeria",
+    "answer": "Certainly! Here is the specific wording of the Public Authority clause as it pertains to your insurance policy:\n\n\"The insurance on Buildings by this policy extends to include the additional cost of reinstatement of destroyed or damaged property as incurred due to the necessity to comply with Buildings or other Regulations established by Government Ordinances or Bye-Laws of any Municipal or Local Authority, provided that:\n\n1. The amount recoverable under this extension does not include:\n   - Costs incurred in complying with any aforementioned regulations or Bye-Laws.\n   - Destruction or damage occurring prior to the granting of this extension.\n   - Destruction or damage not covered by the policy.\n   - Property or portions of property that are undamaged, or any property with a notice served to the insured before the destruction or damage occurred, excluding foundations (unless specifically excluded from the insurance).\n   - The additional costs required to restore property to a condition equal to its new state, had compliance with these regulations not been necessary.\n   - Any tax, duty, development charge, or assessment arising from capital appreciation due to compliance with said Regulations or Bye-Laws.\n\n2. The work of reinstatement must begin and be completed promptly within twenty-four months after the destruction or damage, or within an extended time allowed by the insurers in writing during that period. This work may occur partially or wholly on another site if necessary due to Regulations or Bye-Laws, but the insurer's liability under this extension cannot be increased as a result.\n\n3. If any policy term",
+    "source_metadata": {
+      "hash": "337cfcdd87bada898d5a60aecebdd95d",
+      "Answer": "The insurance on Buildings by this policy extends to include such additional cost of reinstatement of the destroyed or damaged property thereby insured as may be incurred solely by reason of the necessity to comply with Buildings or other Regulations under or framed in pursuance of any Government Ordinances or Bye-Laws of any Municipal or Local Authority provided that: -\n \n1.  The amount recoverable under this extension shall not include:\n \nthe cost incurred in complying with any of the aforesaid regulations or Bye-Laws.\n \nin respect of destruction or damage occurring prior to the granting of this extension.\nin respect of destruction or damage not insured by the policy.\nunder which notice has been served upon the insured prior to the happening of the destruction or damage, in respect of undamaged property or undamaged portions of property other than foundations (unless foundations are specially excluded from the insurance of this policy) of that portion of the property destroyed or damaged.\nin respect of the undamaged property or undamaged portions of property;\n \nThe additional cost that would have been required to make good the property damaged or destroyed to a condition equal to its condition when new had the necessity to comply with any of the aforesaid Regulations or Bye-Laws not arisen;\n \nThe amount of any rate tax duty development or other charge or assessment arising out of capital appreciation, which may be, payable in respect of the property or by the owner thereof by reason of compliance with any of the aforesaid Regulations or Bye-Laws.\n \n2.         The work of reinstatement must be commenced and carried out with reasonable despatch and in any case must be completed within twenty four months after the destruction or damage or within such further time as the insurers may (during the said twenty-four months) in writing allow and may be carried out wholly or partially upon another site (if the aforesaid Regulations or Bye-Laws so necessitate) subject to the liability of the insurers under this Extension not being thereby increased.\n \n3.         If the liability of the insurers under the policy apart from this Extension shall be reduced by the application of any of the terms and conditions of the policy then the liability of the insurers under this Extension shall be reduced in like proportion.\n \n4.         The total amount recoverable in respect of Buildings shall not exceed the sum insured thereon (included in the total sum insured by the Policy).\n \n5.         All the conditions of the policy except in so far as they may be hereby expressly varied shall apply as if they had been incorporated herein.",
+      "Comment": "nan",
+      "Country": "Nigeria"
+    }
+  },
+  {
+    "question": "Do your policies include a standard Sanctions Clause?",
+    "country": "Nigeria",
+    "answer": "Yes, our policies include a standard Sanctions Clause. If you have any further questions or need more details, feel free to ask.",
+    "source_metadata": {
+      "Country": "Nigeria",
+      "Comment": "nan",
+      "Answer": "Yes",
+      "hash": "6df634db777b5ac820fdabcd1550504c"
+    }
+  },
+  {
+    "question": "If yes, please provide the text of your Sanctions Clause.",
+    "country": "Nigeria",
+    "answer": "Certainly! Here is the text of the Sanctions Clause as requested:\n\n\"No insurer shall be deemed to provide cover and no insurer shall be liable to pay any claim or provide any benefit hereunder to the extent that the provision of such cover, payment of such claim, or provision of such benefit would expose the insurer or its parent to any sanction, prohibition, or restriction implemented pursuant to resolutions of the United Nations or the trade and economic sanctions, laws, or regulations of the European Union, United Kingdom, or United States of America.\"\n\nAdditionally, please note that this wording is consistent with that of the Public Authority Clause. If you require specific language for the Public Authority Clause or any further details, please let me know, and I’d be happy to assist!",
+    "source_metadata": {
+      "Comment": "We noticed that the Public autority clause wording is the same as the wording indicated for  Sanctions Clause. Could you please check and send us the correct wording for both clauses?",
+      "Answer": "No insurer shall be deemed to provide cover and no insurer shall be liable to pay any\nclaim or provide any benefit hereunder to the extent that the provision of such cover,\npayment of such claim or provision of such benefit would expose the insurer or its' parent,\nto any sanction, prohibition or restriction implemented pursuant to resolutions of the\nUnited Nations or the trade and economic Sanctions, laws or regulations of the European\nUnion, United Kingdom or United States of America.",
+      "Country": "Nigeria",
+      "hash": "7f900313b7b76962c270016fd7a83873"
+    }
+  },
+  {
+    "question": "Do you use any sanctions screening process or tool to ensure compliance with regulations?",
+    "country": "Nigeria",
+    "answer": "Yes, we do utilize a sanctions screening process to ensure compliance with regulatory requirements. This helps us maintain adherence to legal standards while effectively managing risk. If you have any further questions about our compliance practices, feel free to ask.",
+    "source_metadata": {
+      "hash": "11b2653bd7ce04578fc2350557d24543",
+      "Country": "Nigeria",
+      "Comment": "nan",
+      "Answer": "Yes"
+    }
+  },
+  {
+    "question": "Under which Incoterms is local insurance mandatory for Marine Cargo?",
+    "country": "Nigeria",
+    "answer": "Local insurance is mandatory for Marine Cargo under the Incoterm \"CIF\" (Cost, Insurance, and Freight). This Incoterm requires the seller to provide insurance for the goods being shipped.",
+    "source_metadata": {
+      "Answer": "Yes",
+      "hash": "9e4af4a9eb46ce8d994d27436ae55e90",
+      "Comment": "nan",
+      "Country": "Nigeria"
+    }
+  },
+  {
+    "question": "Is insurance required locally for import, export, or domestic cargo transport?",
+    "country": "Nigeria",
+    "answer": "Yes, insurance is required for import, export, and domestic cargo transport. This ensures that the cargo is protected during transit against potential risks such as damage or loss.",
+    "source_metadata": {
+      "Comment": "nan",
+      "hash": "3d53624a681bfa3807c89c455940f7f8",
+      "Country": "Nigeria",
+      "Answer": "Yes"
+    }
+  },
+  {
+    "question": "Do regulations demand broker confirmation before issuing a policy draft?",
+    "country": "Nigeria",
+    "answer": "Regulations do not require broker confirmation before issuing a policy draft. This means that the issuance of a policy draft can proceed without needing prior validation from a broker.",
+    "source_metadata": {
+      "Answer": "No",
+      "Comment": "nan",
+      "hash": "b97de6528978cb08769952d2529e3f2a",
+      "Country": "Nigeria"
+    }
+  },
+  {
+    "question": "Can your organization collaborate with Third-Party Administrators (TPAs)?",
+    "country": "Nigeria",
+    "answer": "At this time, our organization does not collaborate with Third-Party Administrators (TPAs). If you have any specific needs or further questions regarding this policy, please feel free to reach out for clarification.",
+    "source_metadata": {
+      "Country": "Nigeria",
+      "Answer": "No",
+      "Comment": "PLEASE CLARIFY",
+      "hash": "573f271f14ed6235d658c967349091a8"
+    }
+  },
+  {
+    "question": "Do you maintain an internal list of approved TPAs for claims handling?",
+    "country": "Nigeria",
+    "answer": "No, we do not maintain an internal list of approved Third-Party Administrators (TPAs) for claims handling.",
+    "source_metadata": {
+      "Answer": "No",
+      "hash": "eef5fa14e1344af13b4f0d70f2d6c5dc",
+      "Comment": "nan",
+      "Country": "Nigeria"
+    }
+  },
+  {
+    "question": "Can you authorize TPAs or Generali to handle claims on your behalf?",
+    "country": "Nigeria",
+    "answer": "Yes, we can authorize Third-Party Administrators (TPAs) or Generali to handle claims on our behalf. If you have specific TPAs in mind or need further assistance, please let us know.",
+    "source_metadata": {
+      "Country": "Nigeria",
+      "Comment": "nan",
+      "Answer": "Yes",
+      "hash": "124bbc11180cbb450b78e8670ff9fc33"
+    }
+  },
+  {
+    "question": "Is a non-binding English translation of the policy available upon request?",
+    "country": "Nigeria",
+    "answer": "Yes, a non-binding English translation of the policy is available upon request, as the policy is originally issued in English.",
+    "source_metadata": {
+      "Country": "Nigeria",
+      "Comment": "The policy is issued originally in English",
+      "Answer": "Yes",
+      "hash": "cefed8aa908ff224be0313ff3c6ba6c8"
+    }
+  },
+  {
+    "question": "Do you require certain documents, such as KYC, prior to policy issuance?",
+    "country": "Nigeria",
+    "answer": "Yes, certain documents are required prior to policy issuance, including a completed proposal form and the company's Certificate of Incorporation (CAC). These documents help us verify your identity and ensure compliance with KYC regulations.",
+    "source_metadata": {
+      "Answer": "Yes",
+      "hash": "b0e7aa835e0fbe947e85309657c6ffe1",
+      "Country": "Nigeria",
+      "Comment": "Proposal form, Company CAC"
+    }
+  },
+  {
+    "question": "Can Property policies be issued on an All Risks basis in your jurisdiction?",
+    "country": "Nigeria",
+    "answer": "Yes, property policies can be issued on an All Risks basis in your jurisdiction. This means that coverage is typically broader and includes a wide range of perils, offering enhanced protection for your property.",
+    "source_metadata": {
+      "Answer": "Yes",
+      "Comment": "nan",
+      "Country": "Nigeria",
+      "hash": "666b18efd2c2952dffe687723eee6e28"
+    }
+  },
+  {
+    "question": "If Cyber risks are excluded, please share the exclusion wording.",
+    "country": "Nigeria",
+    "answer": "I currently do not have access to the specific exclusion wording for cyber risks. For accurate and detailed information regarding exclusions, I recommend consulting your insurance policy documents or contacting your insurance provider directly. They will be able to offer you the most comprehensive details.",
+    "source_metadata": {
+      "Answer": "Not available",
+      "Country": "Nigeria",
+      "Comment": "nan",
+      "hash": "978f01cf01af5e29d975f78095434eb1"
+    }
+  }
+]

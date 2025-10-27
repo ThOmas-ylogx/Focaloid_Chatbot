@@ -1,0 +1,362 @@
+[
+    {
+        "question": "Are there any compulsory pricing regulations for specific insurance lines or types of coverage in your country?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "Does your country have any state-backed or mandatory reinsurance pools or schemes?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "If so, please identify which insurance lines or cover types are included.",
+        "country": "Cameroon"
+    },
+    {
+        "question": "Is there a legally required minimum retention that insurers must maintain before ceding premiums?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "If applicable, what is the minimum retention percentage that must be held?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "Are you obligated to go through a state reinsurer or approved intermediary before transferring a policy to Generali?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "If yes, please mention the name of the required reinsurer or intermediary.",
+        "country": "Cameroon"
+    },
+    {
+        "question": "If applicable, what is the commission rate allowed for the reinsurer?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "If applicable, what percentage of retention applies to the reinsurer?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "Do local laws require applying a Reinsurance Tax (RI Tax) when remitting premiums to Generali?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "If yes, what is the applicable rate or fixed amount of the RI Tax?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "If yes, how is the RI Tax calculated — on gross or net premiums?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "Is the Cash Before Cover rule enforced in your jurisdiction?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "What are your normal payment terms for premium settlement in days from the invoice date?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "What are your cancellation terms if a premium remains unpaid after the due date?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "What is your standard policy cancellation notice period in days?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "Can you issue backdated policies where coverage starts before the issuance date?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "Are you permitted to provide a certificate or temporary proof of insurance before the full policy is released?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "Can policies be issued prior to signing the Slip or Reinsurance Covernote?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "Is it mandatory in your country to use a broker for policy issuance?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "Besides your local currency, in which other currencies are policies allowed to be issued?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "Do you have the option to take part in a Centralized Premium Collection (CPC) system?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "If so, can you only receive deductions like commissions, brokerage fees, and taxes directly?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "How frequently do you submit Reinsurance Bordereaux to Generali — monthly, quarterly, etc.?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "After closing a reporting period, how many days do you need to send Premium and Claims Bordereaux?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "What is the name of your banking institution?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "Please provide your official bank account number.",
+        "country": "Cameroon"
+    },
+    {
+        "question": "Which currency is your bank account maintained in?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "What jurisdiction governs your Casualty and Financial Lines policies?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "If you exclude pandemics or communicable diseases (like COVID-19), please share the exclusion wording.",
+        "country": "Cameroon"
+    },
+    {
+        "question": "Do you exclude pandemic-related losses as triggers under Public Authority clauses for Business Interruption?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "If so, please share the exact wording used in your Public Authority clause.",
+        "country": "Cameroon"
+    },
+    {
+        "question": "Do your policy documents contain a Sanctions Clause?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "If yes, please share the text of the Sanctions Clause.",
+        "country": "Cameroon"
+    },
+    {
+        "question": "Do you perform sanctions screening or use tools to comply with local and global sanction rules?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "For Marine Cargo policies, are there Incoterms requiring local insurance coverage?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "Is local insurance mandatory for marine imports, exports, or domestic shipments?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "Is broker approval of the draft policy required before issuance under local regulation?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "Are you authorized to engage and collaborate with Third-Party Administrators (TPAs)?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "Do you keep an approved list of Third-Party Administrators you work with?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "Can you delegate claim-handling authority to a TPA or Generali as reinsurer?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "Can clients request an English-language, non-binding copy of the policy?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "Do you need to collect specific documents, such as KYC, before issuing a local policy?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "Are Property policies allowed to be issued on an All Risks basis in your country?",
+        "country": "Cameroon"
+    },
+    {
+        "question": "If Cyber risk is excluded, please provide the exclusion wording.",
+        "country": "Cameroon"
+    },
+    {
+        "question": "Do certain business lines or coverage types have mandatory tariffs in your jurisdiction?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "Are there government-operated or compulsory reinsurance schemes in your country?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "If applicable, which lines of business or insurance covers fall under these schemes?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "Is there a minimum level of retention required before ceding premiums to reinsurers?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "If so, please mention the required retention percentage.",
+        "country": "Nigeria"
+    },
+    {
+        "question": "Do regulations require involving a state reinsurer or designated intermediary before working with Generali?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "If yes, please indicate the reinsurer’s name.",
+        "country": "Nigeria"
+    },
+    {
+        "question": "If yes, please state the commission rate that applies to the reinsurer.",
+        "country": "Nigeria"
+    },
+    {
+        "question": "If yes, please specify the reinsurer’s retention percentage.",
+        "country": "Nigeria"
+    },
+    {
+        "question": "Do you apply a Reinsurance Tax when sending premiums to Generali?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "If yes, what is the applicable RI Tax rate or amount?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "If yes, is the RI Tax calculated based on gross or net premium?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "Does the Cash Before Cover requirement apply in your jurisdiction?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "What are your usual premium payment terms in days from invoice issuance?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "What cancellation rules apply if a client fails to pay within the payment window?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "What is the standard notice period for policy cancellation in your country?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "Is backdating of policies permitted, allowing retroactive coverage?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "Can a temporary certificate or insurance proof be issued before the main policy?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "Are policies allowed to be issued before the Slip or Covernote is signed?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "Must policies be issued through a licensed broker in your country?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "Apart from the local currency, what other currencies can policies be written in?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "Can your company take part in a Centralized Premium Collection program?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "If yes, can you only directly receive deductions like brokerage, taxes, and fees?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "How often are Reinsurance Bordereaux reports sent to Generali — monthly or quarterly?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "After each reporting period, how many days do you take to deliver Premium and Claims Bordereaux?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "What is the official name of your banking institution?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "Please provide your official bank account details.",
+        "country": "Nigeria"
+    },
+    {
+        "question": "In what currency is your bank account maintained?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "Which legal jurisdiction applies to Casualty and Financial Lines policies?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "If pandemics or infectious diseases are excluded, please share the exclusion wording.",
+        "country": "Nigeria"
+    },
+    {
+        "question": "For Business Interruption policies under Public Authority clauses, are pandemic losses excluded as triggers?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "If yes, please provide the specific Public Authority clause wording.",
+        "country": "Nigeria"
+    },
+    {
+        "question": "Do your policies include a standard Sanctions Clause?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "If yes, please provide the text of your Sanctions Clause.",
+        "country": "Nigeria"
+    },
+    {
+        "question": "Do you use any sanctions screening process or tool to ensure compliance with regulations?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "Under which Incoterms is local insurance mandatory for Marine Cargo?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "Is insurance required locally for import, export, or domestic cargo transport?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "Do regulations demand broker confirmation before issuing a policy draft?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "Can your organization collaborate with Third-Party Administrators (TPAs)?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "Do you maintain an internal list of approved TPAs for claims handling?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "Can you authorize TPAs or Generali to handle claims on your behalf?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "Is a non-binding English translation of the policy available upon request?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "Do you require certain documents, such as KYC, prior to policy issuance?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "Can Property policies be issued on an All Risks basis in your jurisdiction?",
+        "country": "Nigeria"
+    },
+    {
+        "question": "If Cyber risks are excluded, please share the exclusion wording.",
+        "country": "Nigeria"
+    }
+]

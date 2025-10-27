@@ -1,4 +1,5 @@
 #custome list
+.env
 
 # Byte-compiled / optimized / DLL files
 node_modules
@@ -152,6 +153,8 @@ venv.bak/
 
 # Vectorstore
 /vectorstore
+**/vectorstore/**
+backend/vectorstore/**/*
 
 # mypy
 .mypy_cache/
