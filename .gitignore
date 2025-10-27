@@ -1,4 +1,7 @@
 #custome list
+.env
+backend/.env
+frontend/.env
 
 # Byte-compiled / optimized / DLL files
 node_modules
